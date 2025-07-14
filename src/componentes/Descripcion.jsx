@@ -1,6 +1,16 @@
-import { FaCode } from "react-icons/fa";
-
 function Descripcion() {
+  const contacto = [
+    {
+      texto: "631694540",
+    },
+
+    {
+      texto: "probablynotannie@gmail.com",
+    },
+    {
+      texto: "Donostia",
+    },
+  ];
   return (
     <section
       id="home"
@@ -22,7 +32,19 @@ function Descripcion() {
           </div>
         </div>
       </div>
-     
+      <div className="flex gap-10">
+        {contacto.map((p) => (
+          <div
+            className="group relative overflow-hidden flex justify-center items-center p-10 text-slate-300 bg-slate-800/30 border border-slate-700 rounded-lg"
+            key={p}
+          >
+            {p.icono}
+            <p className="group-hover:text-pink-600 transition duration-300 group-hover:font-semibold">
+              {p.texto}
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

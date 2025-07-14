@@ -35,20 +35,7 @@
       position: relative;
       overflow: hidden;
     }
-
-
-    
-    .morphing-card {
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      transform-style: preserve-3d;
-    }
-    
-    .morphing-card:hover {
-      transform: translateY(-20px) rotateX(5deg) rotateY(5deg);
-    }
-
-  
-    
+ 
     .neon-border {
       position: relative;
       background: rgba(0,0,0,0.1);
@@ -88,7 +75,7 @@
 
     .holographic-card {
       position: relative;
-      background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+      background: linear-gradient(45deg, rgba(8, 243, 235, 0.1), rgba(35, 230, 10, 0.05));
       border: 1px solid rgba(255,255,255,0.2);
       backdrop-filter: blur(20px);
       overflow: hidden;
@@ -109,6 +96,11 @@
       left: 100%;
     }
     
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 4s ease-in-out infinite;
+}
+
 
 @keyframes gradient-x {
   0% {
@@ -121,10 +113,5 @@
   100% {
     background-position: 0% 50%;
   }
-}
-
-.animate-gradient-x {
-  background-size: 200% 200%;
-  animation: gradient-x 4s ease-in-out infinite;
 }
 

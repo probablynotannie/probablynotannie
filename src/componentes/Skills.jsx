@@ -199,47 +199,45 @@ function Skills() {
   ];
 
   return (
-    <>
-      <section className="min-h-screen w-full md:px-8 xl:px-20 text-white bg-primary flex items-center mt-10">
-        <div className="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
-          <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
-            <div className="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
-              <div className="absolute -left-4 sm:left-16 top-20 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
-                <div className="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
-                <p>Herramientas</p>
-              </div>
-              <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
-                Algunas de las herramientas que uso
-              </h2>
+    <section className="min-h-screen w-full md:px-8 xl:px-20 text-white bg-primary flex items-center mt-10 border-y-2 border-slate-700">
+      <div className="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
+        <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
+          <div className="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
+            <div className="absolute -left-4 sm:left-16 top-20 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
+              <div className="xl:w-16 md:w-10 sm:w-8 hidden sm:flex w-8 h-[2px] bg-white mt-2 mx-auto"></div>
+              <p>Mis skills</p>
             </div>
-            <p className="p-3 text-gray-400 text-sm leading-relaxed">
-              Con {anios_experiencia} años de experiencia en desarrollo
-              front-end, cada día descubro nuevo skill que adquirir.
-            </p>
-            <div className="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
-              <button className="rounded-lg px-4 py-2 bg-blue-500 text-white transition-all duration-300">
-                Skills
-              </button>
-              <button className="rounded-lg px-4 py-2 bg-transparent text-gray-300 transition-all duration-300">
-                Tools
-              </button>
-            </div>
+            <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
+              Algunas de las herramientas que uso
+            </h2>
           </div>
-          <div className="w-full md:w-1/2 flex justify-center items-center">
-            <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
-              {herramientas.map((herramienta) => (
-                <div key={herramienta} className="text-center">
-                  <div className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
-                    <span className="text-4xl">{herramienta.svg}</span>
-                    <p className="text-xs mt-2">{herramienta.texto}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <p className="p-3 text-gray-400 text-sm leading-relaxed">
+            Con {anios_experiencia} años de experiencia en desarrollo front-end,
+            cada día descubro nuevo skill que adquirir.
+          </p>
+          <div className="py-4 px-2 space-x-2 rounded-lg bg-secondary shadow-lg">
+            <button className="rounded-lg px-4 py-2 bg-blue-500 text-white transition-all duration-300">
+              Skills
+            </button>
+            <button className="rounded-lg px-4 py-2 bg-transparent text-gray-300 transition-all duration-300">
+              Tools
+            </button>
           </div>
         </div>
-      </section>
-    </>
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+            {herramientas.map((herramienta) => (
+              <div key={herramienta} className="text-center">
+                <div className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                  <span className="text-4xl">{herramienta.svg}</span>
+                  <p className="text-xs mt-2">{herramienta.texto}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
