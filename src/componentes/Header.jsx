@@ -1,4 +1,4 @@
-function Header({ homeRef, skillsRef }) {
+function Header({ homeRef, skillsRef, expRef }) {
   function handleScroll(ref) {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }
@@ -26,10 +26,10 @@ function Header({ homeRef, skillsRef }) {
               <span className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity"></span>
             </button>
             <button
-              onClick={() => handleScroll(skillsRef)}
+              onClick={() => handleScroll(expRef)}
               className="cursor-pointer nav-link relative group px-4 py-2 rounded-full transition-all duration-300 hover:bg-white/10"
             >
-              otra cosita
+              Experiencia
               <span className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-cyan-400 opacity-0 group-hover:opacity-20 transition-opacity"></span>
             </button>
             <button
