@@ -14,7 +14,7 @@ function Descripcion() {
   return (
     <section
       id="home"
-      class="hero-3d min-h-screen flex flex-col items-center justify-center relative overflow-hidden"
+      class="hero-3d min-h-screen flex flex-col items-center justify-center relative overflow-hidden "
     >
       <div class="absolute inset-0" id="hero3d"></div>
       <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -32,10 +32,11 @@ function Descripcion() {
           </div>
         </div>
       </div>
-      <div className="flex gap-10">
-        {contacto.map((p) => (
+
+      <div className="grid  lg:grid-cols-3 gap-10 mx-10">
+        {contacto.map((p, index) => (
           <div
-            className="group relative overflow-hidden flex justify-center items-center p-10 text-slate-300 bg-slate-800/30 border border-slate-700 rounded-lg"
+            className={`group relative overflow-hidden flex justify-center items-center p-10 text-slate-300 bg-slate-800/30 border border-slate-700 rounded-lg`}
             key={p}
           >
             {p.icono}
@@ -45,6 +46,10 @@ function Descripcion() {
           </div>
         ))}
       </div>
+      <img
+        src="/logo.png"
+        className="w-[300px] absolute bottom-5 right-10 opacity-20"
+      />
     </section>
   );
 }
