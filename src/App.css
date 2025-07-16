@@ -90,6 +90,8 @@
 .animate-gradient-x {
   background-size: 200% 200%;
   animation: gradient-x 4s ease-in-out infinite;
+    text-shadow: 0 0 30px rgba(208, 216, 255, 0.235);
+
 }
 
 
@@ -99,7 +101,7 @@
   }
   50% {
     background-position: 100% 50%;
-    text-shadow: 0 0 30px rgba(208, 216, 255, 0.5);
+    text-shadow: 0 0 40px rgba(208, 216, 255, 0.235);
   }
   100% {
     background-position: 0% 50%;
