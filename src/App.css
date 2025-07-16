@@ -19,22 +19,13 @@
       75% { transform: translate(-30px, -10px) rotate(270deg); }
     }
 
-     .glass-morphism {
-      background: rgba(19, 1, 1, 0.1);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    }
-
+  
    
     @keyframes blink {
       0%, 50% { border-color: transparent; }
       51%, 100% { border-color: #ea66ba; }
     }
-     .hero-3d {
-      position: relative;
-      overflow: hidden;
-    }
+  
  
     .neon-border {
       position: relative;
@@ -75,7 +66,7 @@
 
     .holographic-card {
       position: relative;
-      background: linear-gradient(45deg, rgba(8, 243, 235, 0.1), rgba(35, 230, 10, 0.05));
+      background: linear-gradient(45deg, rgba(17, 0, 12, 0.006), rgba(230, 10, 157, 0.024));
       border: 1px solid rgba(255,255,255,0.2);
       backdrop-filter: blur(20px);
       overflow: hidden;
@@ -119,9 +110,15 @@
       transform: rotate(-90deg);
       transform-origin: 50% 50%;
     }
-    
     .progress-ring-circle {
       stroke-dasharray: 283;
       stroke-dashoffset: 283;
       transition: stroke-dashoffset 2s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+     .parallax-element {
+      transform-style: preserve-3d;
+      transition: transform 0.1s ease-out;
+    }
+
+

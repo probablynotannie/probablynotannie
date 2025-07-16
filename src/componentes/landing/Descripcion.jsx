@@ -1,4 +1,44 @@
+import { useEffect, useState } from "react";
 function Descripcion() {
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [delta, setDelta] = useState(200 - Math.random() * 100);
+
+  const texts = [
+    "Desarrolladora Front-End, aprendiendo y mejorando cada día.",
+    "Componentes reutilizables, diseño responsive y atención al detalle.",
+    "Siempre en busca de nuevos proyectos para innovar y seguir creciendo..",
+  ];
+
+  const period = 3000;
+  useEffect(() => {
+    const handleTyping = () => {
+      const i = loopNum % texts.length;
+      const fullText = texts[i];
+
+      setText((prev) =>
+        isDeleting
+          ? fullText.substring(0, prev.length - 1)
+          : fullText.substring(0, prev.length + 1)
+      );
+
+      let nextDelta = isDeleting ? 30 : 60;
+
+      if (!isDeleting && text === fullText) {
+        nextDelta = period;
+        setIsDeleting(true);
+      } else if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        nextDelta = 300;
+      }
+      setDelta(nextDelta);
+    };
+
+    const timer = setTimeout(handleTyping, delta);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, delta, loopNum, texts, period]);
   const contacto = [
     {
       texto: "631694540",
@@ -12,20 +52,20 @@ function Descripcion() {
     },
   ];
   return (
-    <section class="hero-3d min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-      <div class="absolute inset-0" id="hero3d"></div>
+    <section class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+      <div class="absolute inset-0"></div>
       <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="text-center">
           <div class="mb-8">
             <h1 class="text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent glow animate-gradient-x">
               Anano Vachadze
             </h1>
-            <div
-              className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8"
-              data-speed="0.5"
-            >
-              <span class="typing-text">Desarrolladora front-end</span>
-            </div>
+
+            <h2 className="typewrite text-white min-h-8">
+              <span className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 parallax-element ">
+                {text}
+              </span>
+            </h2>
           </div>
         </div>
       </div>

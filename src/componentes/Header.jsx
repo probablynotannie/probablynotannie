@@ -3,7 +3,7 @@ function Header({ homeRef, skillsRef, expRef }) {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }
   return (
-    <nav className="glass-morphism fixed w-full z-50 transition-all duration-500 py-4">
+    <nav className="shadow-xl shadow-indigo-800/20 backdrop-blur-lg tw-bg-slate-900 border-1 border-slate-100/20 fixed w-full z-50 transition-all duration-500 py-4">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">

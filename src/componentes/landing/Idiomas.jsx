@@ -4,32 +4,32 @@ function Idiomas() {
       id: 0,
       idioma: "Inglés",
       porcentaje: 20,
-      porcentajeAMostrar: 90,
+      porcentajeAMostrar: <img src="/idiomas/america.svg" className="w-7" />,
     },
     {
       id: 1,
       idioma: "Español",
       porcentaje: 20,
-      porcentajeAMostrar: 90,
+      porcentajeAMostrar: <img src="/idiomas/spain.svg" className="w-7" />,
     },
     {
       id: 2,
       idioma: "Georgiano",
       porcentaje: 20,
-      porcentajeAMostrar: 90,
+      porcentajeAMostrar: <img src="/idiomas/georgia.svg" className="w-7" />,
     },
     {
       id: 3,
       idioma: "Ruso",
       porcentaje: 180,
 
-      porcentajeAMostrar: 40,
+      porcentajeAMostrar: <img src="/idiomas/russia.png" className="w-7" />,
     },
     {
       id: 4,
       idioma: "Euskera",
       porcentaje: 200,
-      porcentajeAMostrar: 30,
+      porcentajeAMostrar: <img src="/idiomas/basque.png" className="w-7" />,
     },
   ];
   return (
