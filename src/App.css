@@ -89,11 +89,8 @@
     
 .animate-gradient-x {
   background-size: 200% 200%;
-  animation: gradient-x 4s ease-in-out infinite;
-    text-shadow: 0 0 30px rgba(208, 216, 255, 0.235);
-
+  animation: gradient-x 4s ease-in-out infinite, glow-pulse 3s ease-in-out infinite;
 }
-
 
 @keyframes gradient-x {
   0% {
@@ -101,12 +98,21 @@
   }
   50% {
     background-position: 100% 50%;
-    text-shadow: 0 0 40px rgba(208, 216, 255, 0.235);
   }
   100% {
     background-position: 0% 50%;
   }
 }
+
+@keyframes glow-pulse {
+  0%, 100% {
+    text-shadow: 0 0 30px rgba(208, 216, 255, 0.235);
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(208, 216, 255, 0.6);
+  }
+}
+
 
 .progress-ring {
       transform: rotate(-90deg);
