@@ -13,21 +13,31 @@ function Landing() {
   const expRef = useRef(null);
   const educacionRef = useRef(null);
   return (
-    <main>
+    <>
       <Header homeRef={homeRef} skillsRef={skillsRef} expRef={expRef} />
-      <section ref={homeRef}>
-        <Descripcion />
-      </section>
-      <section ref={skillsRef}>
-        <Skills />
-      </section>
-      <section ref={expRef}>
-        <Experiencia />
-      </section>
-      <section ref={educacionRef}>
-        <Idiomas />
-      </section>
-    </main>
+
+      <main className="divide-y-2 divide-slate-700/30">
+        <section ref={homeRef}>
+          <Descripcion />
+        </section>
+        <section ref={skillsRef}>
+          <Skills />
+        </section>
+        <section ref={expRef}>
+          <Experiencia />
+        </section>
+        <section className="flex justify-center p-10" ref={educacionRef}>
+          <div className="container  flex-col grid grid-cols-4">
+            <div className="col-span-1">
+              <Idiomas />
+            </div>{" "}
+            <div className="col-span-3">
+              <Educacion />
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
 

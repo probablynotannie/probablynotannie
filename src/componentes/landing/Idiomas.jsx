@@ -33,34 +33,32 @@ function Idiomas() {
     },
   ];
   return (
-    <div className="flex justify-center items-center px-10 min-h-[40vh] border-y-2 border-slate-700">
-      <div className="grid xl:grid-cols-5 gap-5">
-        {idiomas.map((idioma) => (
-          <div
-            key={idioma.id}
-            className="text-slate-300 bg-slate-900 p-2 flex items-center justify-between min-w-[200px] rounded-lg border border-slate-700 h-fit"
-          >
-            <h3 className="font-bold">{idioma.idioma}</h3>
-            <div className="relative">
-              <svg className="progress-ring w-16 h-16" viewBox="0 0 100 100">
-                <circle
-                  className="progress-ring-circle text-cyan-500"
-                  cx="50"
-                  cy="50"
-                  r="45"
-                  fill="transparent"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                  style={{ strokeDashoffset: idioma.porcentaje }}
-                />
-              </svg>
-              <div className="absolute inset-0 flex items-center justify-center text-sm font-bold text-cyan-400">
-                {idioma.porcentajeAMostrar}
-              </div>
+    <div className="gap-5">
+      {idiomas.map((idioma) => (
+        <div
+          key={idioma.id}
+          className="text-slate-300 bg-slate-900 p-2 flex items-center justify-between min-w-[200px] border border-slate-700 h-fit"
+        >
+          <h3 className="font-bold">{idioma.idioma}</h3>
+          <div className="relative">
+            <svg className="progress-ring w-16 h-16" viewBox="0 0 100 100">
+              <circle
+                className="progress-ring-circle text-cyan-500"
+                cx="50"
+                cy="50"
+                r="45"
+                fill="transparent"
+                stroke="currentColor"
+                strokeWidth="4"
+                style={{ strokeDashoffset: idioma.porcentaje }}
+              />
+            </svg>
+            <div className="absolute inset-0 flex items-center justify-center text-sm font-bold text-cyan-400">
+              {idioma.porcentajeAMostrar}
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

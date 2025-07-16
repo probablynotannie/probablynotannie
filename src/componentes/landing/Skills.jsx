@@ -200,7 +200,7 @@ function Skills() {
   ];
 
   return (
-    <section className="min-h-screen w-full md:px-8 xl:px-20 text-white bg-primary flex items-center mt-10 border-y-2 border-slate-700">
+    <section className="min-h-screen w-full md:px-8 xl:px-20 text-white bg-primary flex items-center mt-10 ">
       <div className="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
         <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
           <div className="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">

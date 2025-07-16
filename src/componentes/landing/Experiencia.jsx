@@ -114,7 +114,7 @@ function Experiencia() {
   ];
 
   return (
-    <section className="min-h-screen gap-5 relative overflow-hidden flex justify-center items-center ">
+    <section className="min-h-screen gap-5 relative overflow-hidden md:px-8 xl:px-20 flex justify-around items-center ">
       <div className=" px-10 flex flex-wrap  items-stretch justify-center gap-10 ">
         {empresas.map((empresa) => (
           <div
