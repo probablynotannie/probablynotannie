@@ -13,7 +13,7 @@ function Landing() {
   const expRef = useRef(null);
   const educacionRef = useRef(null);
   return (
-    <main className="">
+    <main>
       <Header homeRef={homeRef} skillsRef={skillsRef} expRef={expRef} />
       <section ref={homeRef}>
         <Descripcion />
@@ -25,7 +25,6 @@ function Landing() {
         <Experiencia />
       </section>
       <section ref={educacionRef}>
-        <Educacion />
         <Idiomas />
       </section>
     </main>
