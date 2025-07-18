@@ -3,9 +3,9 @@ function Experiencia() {
     {
       id: 0,
       titulo: (
-        <h2 className="font-bold text-laSalle text-xl">
+        <h3 className="font-bold text-laSalle text-xl">
           La Salle <span className="text-lg"> (sep 2021 - sep 2023)</span>
-        </h2>
+        </h3>
       ),
       descripcion: (
         <p>
@@ -53,9 +53,9 @@ function Experiencia() {
     {
       id: 1,
       titulo: (
-        <h2 className="font-bold text-dit text-xl">
+        <h3 className="font-bold text-dit text-xl">
           Dit Gestion <span className="text-lg"> (jun 2024 - actual)</span>
-        </h2>
+        </h3>
       ),
       descripcion: (
         <div className="flex flex-col gap-4">
@@ -113,34 +113,36 @@ function Experiencia() {
   ];
 
   return (
-    <section className="min-h-screen gap-5 relative overflow-hidden md:px-8 xl:px-20 flex justify-around items-center ">
-      <div className=" px-10 flex flex-wrap  items-stretch justify-center gap-10 ">
-        {empresas.map((empresa) => (
-          <div
-            key={empresa.id}
-            className="holographic-card flex flex-col p-5 w-full lg:w-[30vw] xl:w-[25vw]"
-          >
-            <div>
-              {empresa.titulo}
-              <div className="text-slate-300 text-sm mt-5">
-                {empresa.descripcion}
+    <>
+      <section className="gap-5 relative overflow-hidden md:px-8 xl:px-20 flex justify-around items-center ">
+        <div className=" px-10 flex flex-wrap  items-stretch justify-center gap-10 ">
+          {empresas.map((empresa) => (
+            <div
+              key={empresa.id}
+              className="holographic-card flex flex-col p-5 w-full lg:w-[30vw] xl:w-[35vw]"
+            >
+              <div>
+                {empresa.titulo}
+                <div className="text-slate-300 text-sm mt-5">
+                  {empresa.descripcion}
+                </div>
+              </div>
+
+              <div className="mt-4 flex gap-3 flex-wrap">
+                {empresa.skills.map((skill, index) => (
+                  <span
+                    className={`${skill.color} text-sm p-1 px-2 rounded-xl`}
+                    key={index}
+                  >
+                    {skill.texto}
+                  </span>
+                ))}
               </div>
             </div>
-
-            <div className="mt-4 flex gap-3 flex-wrap">
-              {empresa.skills.map((skill, index) => (
-                <span
-                  className={`${skill.color} text-sm p-1 px-2 rounded-xl`}
-                  key={index}
-                >
-                  {skill.texto}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 

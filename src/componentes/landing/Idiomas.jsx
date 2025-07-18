@@ -5,13 +5,13 @@ function Idiomas() {
     {
       id: 0,
       idioma: "Inglés",
-      porcentaje: 40,
+      porcentaje: 90,
       flag: "/idiomas/america.svg",
     },
     {
       id: 1,
       idioma: "Español",
-      porcentaje: 100,
+      porcentaje: 90,
       flag: "/idiomas/spain.svg",
     },
     {
@@ -23,13 +23,13 @@ function Idiomas() {
     {
       id: 3,
       idioma: "Ruso",
-      porcentaje: 80,
+      porcentaje: 40,
       flag: "/idiomas/russia.png",
     },
     {
       id: 4,
       idioma: "Euskera",
-      porcentaje: 70,
+      porcentaje: 25,
       flag: "/idiomas/basque.png",
     },
   ];
@@ -38,8 +38,8 @@ function Idiomas() {
   const circumference = 2 * Math.PI * radius;
 
   return (
-    <section className="container px-6 py-12 max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 py-10">
+    <section className="container px-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 py-10">
         {idiomas.map((idioma) => {
           const strokeDashoffset =
             circumference - (idioma.porcentaje / 100) * circumference;

@@ -6,6 +6,7 @@ import Experiencia from "./landing/Experiencia";
 import Idiomas from "./landing/Idiomas";
 import Proyectos from "./landing/Proyectos";
 import Particulos from "./body/Particles";
+import Prueba from "./landing/Prueba";
 import Educacion from "./landing/Educacion";
 function Landing() {
   const skillsRef = useRef(null);
@@ -23,12 +24,13 @@ function Landing() {
         <section ref={skillsRef}>
           <Skills />
         </section>
-        <section ref={expRef}>
+        <section className="py-28" ref={expRef}>
           <Experiencia />
-        </section>
-        <section className="flex flex-col justify-center" ref={educacionRef}>
           <Educacion />
           <Idiomas />
+        </section>
+        <section className="px-24 p-10  max-w-6xl" ref={educacionRef}>
+          <Prueba />
         </section>
       </main>
     </>

@@ -205,7 +205,7 @@ function Skills() {
         <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
           <div className="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
             <div className="absolute -left-4 sm:left-16 top-20 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
-              <div className="xl:w-16 md:w-10 sm:w-8 hidden sm:flex w-8 h-[2px] bg-white mt-2 mx-auto"></div>
+              <div className="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
               <p>Tecnologias</p>
             </div>
             <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
@@ -215,14 +215,15 @@ function Skills() {
           <p className="p-3 text-gray-400 text-sm leading-relaxed">
             Con {anios_experiencia} años de experiencia en desarrollo front-end,
             cada día descubriendo nuevas tecnologias que usar y mejorar.
+            <br></br> Estoy en busca de nuevos retos donde pueda aportar lo que
+            sé y aprender aún más en el camino.
           </p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
             {herramientas.map((herramienta) => (
               <div key={herramienta.id} className="text-center">
-                <div
-                 className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+                <div className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
                   <span className="text-4xl">{herramienta.svg}</span>
                   <p className="text-xs mt-2">{herramienta.texto}</p>
                 </div>
