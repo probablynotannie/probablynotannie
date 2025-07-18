@@ -1,4 +1,3 @@
-
 function Experiencia() {
   const empresas = [
     {
@@ -129,10 +128,10 @@ function Experiencia() {
             </div>
 
             <div className="mt-4 flex gap-3 flex-wrap">
-              {empresa.skills.map((skill) => (
+              {empresa.skills.map((skill, index) => (
                 <span
                   className={`${skill.color} text-sm p-1 px-2 rounded-xl`}
-                  key={skill.texto}
+                  key={index}
                 >
                   {skill.texto}
                 </span>

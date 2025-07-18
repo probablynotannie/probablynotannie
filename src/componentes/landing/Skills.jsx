@@ -3,12 +3,12 @@ function Skills() {
 
   const herramientas = [
     {
-      id: 4,
+      id: 0,
       texto: "React JS",
       svg: <img src="/skills/react.png" className="w-10" />,
     },
     {
-      id: 4,
+      id: 1,
       texto: "Tailwind css",
       svg: (
         <span className="text-4xl">
@@ -22,9 +22,9 @@ function Skills() {
               <rect width="350" height="265" fill="#242938" rx="60" />
               <path
                 fill="url(#skillIconsTailwindcssDark0)"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M83 110q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5Q96.5 92 83 110m-45 54q9-36 45-36c36 0 40.5 27 58.5 31.5q18 4.502 31.5-13.5q-9 36-45 36c-36 0-40.5-27-58.5-31.5q-18-4.502-31.5 13.5"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
               <defs>
                 <linearGradient
@@ -35,8 +35,8 @@ function Skills() {
                   y2="185.5"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#32B1C1" />
-                  <stop offset="1" stop-color="#14C6B7" />
+                  <stop stopColor="#32B1C1" />
+                  <stop offset="1" stopColor="#14C6B7" />
                 </linearGradient>
               </defs>
             </g>
@@ -45,17 +45,17 @@ function Skills() {
       ),
     },
     {
-      id: 4,
+      id: 2,
       texto: "Tanstack Query",
       svg: <img src="/skills/tanstack.png" className="w-10" />,
     },
     {
-      id: 4,
+      id: 3,
       texto: "Zustand",
       svg: <img src="/skills/zustand.png" className="w-10" />,
     },
     {
-      id: 0,
+      id: 4,
       texto: "HTML5",
       svg: (
         <span className="text-4xl">
@@ -81,7 +81,7 @@ function Skills() {
       ),
     },
     {
-      id: 1,
+      id: 5,
       texto: "CSS",
       svg: (
         <span className="text-4xl">
@@ -107,7 +107,7 @@ function Skills() {
       ),
     },
     {
-      id: 2,
+      id: 6,
       texto: "JavaScript",
       svg: (
         <span className="text-4xl">
@@ -129,18 +129,18 @@ function Skills() {
       ),
     },
     {
-      id: 132,
+      id: 7,
       texto: "Vite",
       svg: <img src="/skills/vite.svg" className="w-10" />,
     },
     {
-      id: 3,
+      id: 8,
       texto: "Bootstrap",
       svg: <img src="/skills/bootstrap.png" className="w-10" />,
     },
 
     {
-      id: 5,
+      id: 9,
       texto: "Laravel",
       svg: (
         <span className="text-4xl">
@@ -154,9 +154,9 @@ function Skills() {
               <rect width="256" height="256" fill="#242938" rx="60" />
               <path
                 fill="#FF2D20"
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M215.846 78.314q.097.366.098.747v39.199c0 .503-.131.997-.379 1.432a2.84 2.84 0 0 1-1.037 1.047l-32.446 18.942v37.545a2.87 2.87 0 0 1-1.409 2.48l-67.728 39.535c-.155.089-.324.146-.493.207c-.064.022-.123.061-.19.079a2.8 2.8 0 0 1-1.445 0c-.077-.022-.148-.065-.222-.093c-.155-.057-.317-.107-.465-.193l-67.714-39.535a2.85 2.85 0 0 1-1.036-1.047a2.9 2.9 0 0 1-.38-1.433V59.629q.002-.387.099-.75c.02-.083.07-.158.098-.24c.053-.15.102-.303.18-.443c.053-.093.13-.168.194-.253c.08-.115.155-.233.25-.333c.08-.082.187-.143.278-.214c.102-.086.194-.179.31-.247h.004L76.27 37.382a2.8 2.8 0 0 1 2.819 0l33.859 19.767h.007c.112.072.208.161.31.243c.091.072.193.136.274.215c.099.103.17.221.254.336c.06.085.141.16.19.253c.081.143.127.293.184.443c.028.082.077.157.098.243q.097.367.099.747v73.45l28.214-16.473v-37.55c0-.25.035-.503.099-.742c.025-.086.07-.161.099-.243c.056-.15.105-.304.183-.443c.053-.093.13-.168.19-.254c.085-.114.155-.232.254-.332c.081-.082.183-.143.275-.215c.105-.085.197-.178.31-.246h.004l33.862-19.768a2.79 2.79 0 0 1 2.818 0l33.859 19.768c.12.072.211.16.317.243c.088.071.19.136.271.214c.099.104.169.222.254.336c.063.086.141.16.19.254c.081.14.127.293.183.443c.032.082.078.157.099.243m-5.546 38.292V84.009l-11.849 6.916l-16.369 9.557v32.597l28.221-16.473zm-33.859 58.966v-32.618l-16.101 9.325l-45.979 26.609v32.925zM46.644 64.577v110.995l62.073 36.238v-32.919l-32.428-18.61l-.01-.007l-.015-.007c-.109-.064-.2-.157-.303-.236c-.088-.071-.19-.128-.267-.207l-.007-.01c-.092-.09-.156-.2-.233-.301c-.07-.096-.155-.178-.211-.278l-.004-.011c-.064-.107-.103-.236-.148-.357c-.046-.107-.106-.207-.134-.322v-.004c-.035-.135-.042-.278-.057-.418c-.014-.107-.042-.214-.042-.321V81.051L58.493 71.49l-11.849-6.91zm31.04-21.415L49.474 59.63l28.203 16.466l28.207-16.47l-28.207-16.463zm14.671 102.764l16.366-9.553V64.577l-11.85 6.917l-16.368 9.556v71.797zm86.909-83.332l-28.208 16.467l28.208 16.466l28.203-16.47zm-2.823 37.888l-16.369-9.557l-11.848-6.916v32.597l16.365 9.553l11.852 6.92zm-64.905 73.458l41.373-23.952l20.682-11.968l-28.186-16.456l-32.453 18.946l-29.578 17.267z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
             </g>
           </svg>
@@ -164,7 +164,7 @@ function Skills() {
       ),
     },
     {
-      id: 5,
+      id: 10,
       texto: "Git",
       svg: (
         <span className="text-4xl">
@@ -176,7 +176,7 @@ function Skills() {
           >
             <g fill="none">
               <rect width="256" height="256" fill="#F03C2E" rx="60" />
-              <g clip-path="url(#skillIconsGit0)">
+              <g clipPath="url(#skillIconsGit0)">
                 <path
                   fill="#fff"
                   d="m224.225 119.094l-87.319-87.319a12.87 12.87 0 0 0-14.035-2.793a12.9 12.9 0 0 0-4.177 2.793L100.569 49.9l23 23c5.35-1.875 11.475-.594 15.737 3.669a15.31 15.31 0 0 1 3.631 15.831l22.169 22.169c5.363-1.85 11.55-.657 15.831 3.637a15.32 15.32 0 0 1 3.321 16.706a15.333 15.333 0 0 1-20.029 8.293c-1.86-.771-3.55-1.9-4.973-3.324c-4.5-4.5-5.612-11.125-3.337-16.669l-20.675-20.675v54.407a15.6 15.6 0 0 1 4.062 2.9a15.326 15.326 0 0 1-21.675 21.675a15.32 15.32 0 0 1-3.326-16.704a15.3 15.3 0 0 1 3.326-4.971c1.481-1.475 3.125-2.594 5.019-3.344v-54.913a15.2 15.2 0 0 1-5.019-3.343a15.315 15.315 0 0 1-3.3-16.757L91.644 58.814l-59.875 59.812a12.88 12.88 0 0 0-2.795 14.04a12.9 12.9 0 0 0 2.795 4.179l87.325 87.312a12.9 12.9 0 0 0 4.177 2.793a12.9 12.9 0 0 0 9.858 0a12.9 12.9 0 0 0 4.177-2.793l86.919-86.781a12.88 12.88 0 0 0 3.776-9.109a12.88 12.88 0 0 0-3.776-9.11"
@@ -193,7 +193,7 @@ function Skills() {
       ),
     },
     {
-      id: 10,
+      id: 11,
       texto: "PHP",
       svg: <img src="/skills/php.png" className="w-10" />,
     },
@@ -220,8 +220,9 @@ function Skills() {
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
             {herramientas.map((herramienta) => (
-              <div key={herramienta} className="text-center">
-                <div className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
+              <div key={herramienta.id} className="text-center">
+                <div
+                 className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
                   <span className="text-4xl">{herramienta.svg}</span>
                   <p className="text-xs mt-2">{herramienta.texto}</p>
                 </div>

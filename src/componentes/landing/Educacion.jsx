@@ -7,34 +7,40 @@ function Educacion() {
       id: 0,
       colegio: "Zubiri Manteo",
       titulo: "Grado Medio",
-      subTitulo: "sistemas microinformaticos",
+      subTitulo: "Sistemas Microinformáticos",
     },
-      {
+    {
       id: 1,
       colegio: "Zubiri Manteo",
       titulo: "Grado Superior",
-      subTitulo: "Desarrollo de aplicaciones web",
+      subTitulo: "Desarrollo de Aplicaciones Web",
     },
   ];
+
   return (
-    <div className="text-slate-300 flex justify-center items-center min-h-[30vh]">
-      <div className="grid grid-cols-3 gap-10">
+    <section className="container px-6 py-12 max-w-6xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-center text-slate-200 mb-12">
+        Educación
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {educacion.map((ed) => (
           <div
             key={ed.id}
-            className="border-2 border-slate-100/30  grid grid-cols-3 gap-3 rounded holographic-card p-3"
+            className="relative overflow-hidden min-h-[110px] bg-slate-900 border border-slate-700 rounded-2xl px-6 py-8 flex items-center shadow hover:shadow-pink-500/20 transition-all duration-300"
           >
-            <div className="col-span-1 text-xs text-pink-500 flex justify-center items-center h-full -rotate-45">
+            <div className="absolute -left-19 top-1/2 -translate-y-1/2 rotate-[-90deg] bg-pink-600 w-[180px] h-[30px] flex items-center justify-center text-white text-xs font-bold rounded tracking-wider shadow-md">
               {ed.colegio}
             </div>
-            <div className="col-span-2 p-4">
-              <h3 className="text-pink-500">{ed.titulo}</h3>
-              <p>{ed.subTitulo}</p>
+
+            <div className="ml-10">
+              <h3 className="text-xl font-bold text-pink-500">{ed.titulo}</h3>
+              <p className="text-slate-300 text-sm mt-1">{ed.subTitulo}</p>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

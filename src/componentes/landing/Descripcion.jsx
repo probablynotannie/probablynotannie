@@ -52,17 +52,17 @@ function Descripcion() {
     },
   ];
   return (
-    <section class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-      <div class="absolute inset-0"></div>
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
-        <div class="text-center">
-          <div class="mb-8">
-            <h1 class="text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent glow animate-gradient-x">
+    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+      <div className="absolute inset-0"></div>
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center">
+          <div className="mb-8">
+            <h1 className="text-6xl md:text-8xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent glow animate-gradient-x">
               Anano Vachadze
             </h1>
 
             <h2 className="typewrite text-white min-h-8">
-              <span className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 parallax-element ">
+              <span className="block text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 parallax-element min-h-[6rem] ">
                 {text}
               </span>
             </h2>
@@ -70,11 +70,11 @@ function Descripcion() {
         </div>
       </div>
 
-      <div className="grid  lg:grid-cols-3 gap-10 mx-10">
-        {contacto.map((p) => (
+      <div className="grid lg:grid-cols-3 gap-10 mx-10">
+        {contacto.map((p, index) => (
           <div
             className={`group relative overflow-hidden flex justify-center items-center p-10 text-slate-300 bg-slate-800/30 border border-slate-700 rounded-lg`}
-            key={p}
+            key={index}
           >
             {p.icono}
             <p className="group-hover:text-pink-600 transition duration-300 group-hover:font-semibold">

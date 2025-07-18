@@ -4,9 +4,9 @@ import { useRef } from "react";
 import Descripcion from "./landing/Descripcion";
 import Experiencia from "./landing/Experiencia";
 import Idiomas from "./landing/Idiomas";
-import Educacion from "./landing/Educacion";
 import Proyectos from "./landing/Proyectos";
 import Particulos from "./body/Particles";
+import Educacion from "./landing/Educacion";
 function Landing() {
   const skillsRef = useRef(null);
   const homeRef = useRef(null);
@@ -26,15 +26,9 @@ function Landing() {
         <section ref={expRef}>
           <Experiencia />
         </section>
-        <section className="flex justify-center p-10" ref={educacionRef}>
-          <div className="container  flex-col grid grid-cols-4">
-            <div className="col-span-1">
-              <Idiomas />
-            </div>{" "}
-            <div className="col-span-3">
-              <Educacion />
-            </div>
-          </div>
+        <section className="flex flex-col justify-center" ref={educacionRef}>
+          <Educacion />
+          <Idiomas />
         </section>
       </main>
     </>
