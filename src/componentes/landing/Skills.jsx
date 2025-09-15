@@ -200,13 +200,13 @@ function Skills() {
   ];
 
   return (
-    <section className="min-h-screen w-full md:px-8 xl:px-20 text-white bg-primary flex items-center mt-10 ">
+    <section className="min-h-screen w-full md:px-8  text-white bg-primary flex items-center justify-around mt-10 ">
       <div className="flex container flex-col md:flex-row items-center md:items-start gap-16 w-full">
         <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
           <div className="text-white p-6 pl-10 pr-20 sm:pl-10 lg:pr-20">
             <div className="absolute -left-4 sm:left-16 top-20 sm:top-24 md:-left-12 xl:-left-16 md:top-16 xl:top-24 rotate-[-90deg] text-sm tracking-widest flex flex-row justify-start gap-2">
               <div className="xl:w-16 md:w-10 sm:w-8 w-8 h-[2px] bg-white mt-2 mx-auto"></div>
-              <p>Tecnologias</p>
+              <p>Skills</p>
             </div>
             <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
               Algunas de las herramientas que uso

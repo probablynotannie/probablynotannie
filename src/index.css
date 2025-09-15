@@ -3,6 +3,7 @@
 @theme {
   --color-laSalle: #e9b21e;
   --color-dit: #048fd9;
+  
 }
 
 body{
@@ -16,3 +17,4 @@ body{
 .container{
 width: 90vw;
 }
+

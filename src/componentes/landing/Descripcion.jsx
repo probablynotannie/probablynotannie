@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
+
 function Descripcion() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [delta, setDelta] = useState(200 - Math.random() * 100);
-
+  const [copiedIndex, setCopiedIndex] = useState(null);
   const texts = [
     "Desarrolladora Front-End, aprendiendo y mejorando cada día.",
     "Componentes reutilizables, diseño responsive y atención al detalle.",
-    "Siempre en busca de nuevos proyectos para innovar y seguir creciendo..",
+    "Siempre en busca de nuevos proyectos para innovar y seguir creciendo.",
   ];
 
   const period = 3000;
+
   useEffect(() => {
     const handleTyping = () => {
       const i = loopNum % texts.length;
@@ -39,18 +41,20 @@ function Descripcion() {
     const timer = setTimeout(handleTyping, delta);
     return () => clearTimeout(timer);
   }, [text, isDeleting, delta, loopNum, texts, period]);
-  const contacto = [
-    {
-      texto: "631694540",
-    },
 
-    {
-      texto: "probablynotannie@gmail.com",
-    },
-    {
-      texto: "Donostia",
-    },
+  const contacto = [
+    { texto: "631694540" },
+    { texto: "probablynotannie@gmail.com" },
+    { texto: "Donostia" },
   ];
+
+  const handleCopy = (texto, index) => {
+    navigator.clipboard.writeText(texto).then(() => {
+      setCopiedIndex(index);
+      setTimeout(() => setCopiedIndex(null), 1500);
+    });
+  };
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0"></div>
@@ -73,13 +77,19 @@ function Descripcion() {
       <div className="grid lg:grid-cols-3 gap-10 mx-10">
         {contacto.map((p, index) => (
           <div
-            className={`group relative overflow-hidden flex justify-center items-center p-10 text-slate-300 bg-slate-800/30 border border-slate-700 rounded-lg`}
+            className="group relative overflow-hidden flex justify-center items-center p-10 text-slate-300 bg-slate-800/30 border border-slate-700 rounded-lg cursor-pointer"
             key={index}
+            onClick={() => handleCopy(p.texto, index)}
           >
             {p.icono}
             <p className="group-hover:text-pink-600 transition duration-300 group-hover:font-semibold">
               {p.texto}
             </p>
+            {copiedIndex === index && (
+              <span className="absolute top-2 right-2 bg-pink-600 text-white text-xs px-2 py-1 rounded opacity-90 animate-fadeInOut">
+                Copiado
+              </span>
+            )}
           </div>
         ))}
       </div>
