@@ -17,12 +17,12 @@ const imagesData = [
     src: "/costado.png",
     texto: "Ofrezco",
     tags: [
-      { text: "Compromiso", color: "green", top: 12, left: 10 },
-      { text: "Organización", color: "green", top: 20, right: 5 },
-      { text: "Adaptabilidad", color: "green", top: 58, right: -5 },
-      { text: "Flexibilidad", color: "green", top: 50, left: 0 },
-      { text: "Comunicación", color: "green", bottom: 2, left: 20 },
-      { text: "Responsabilidad", color: "green", bottom: 10, right: 5 },
+      { text: "Compromiso", color: "green", top: 24, left: 10 },
+      { text: "Organización", color: "green", top: 20, right: 20 },
+      { text: "Adaptabilidad", color: "green", top: 45, right: 6 },
+      { text: "Flexibilidad", color: "green", top: 55, left: 3 },
+      { text: "Comunicación", color: "green", bottom: 8, left: 20 },
+      { text: "Responsabilidad", color: "green", bottom: 14, right: 10 },
     ],
   },
 ];
@@ -93,7 +93,7 @@ export default function QuePidoOrbs() {
                 <span
                   key={tIdx}
                   style={{ ...positionStyle, animation }}
-                  className={`absolute z-10 text-white text-sm px-3 py-1 rounded-full shadow-lg opacity-0 ${colorClass} border backdrop-blur-sm`}
+                  className={`absolute z-10 text-white text-xs xs:text-sm px-3 py-1 rounded-full shadow-lg opacity-0 ${colorClass} border backdrop-blur-sm`}
                 >
                   {tag.text}
                 </span>
