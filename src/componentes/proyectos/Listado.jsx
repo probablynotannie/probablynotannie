@@ -16,7 +16,7 @@ function Listado() {
       url: "https://buscadormotores.vercel.app",
       texto: "Dit Gestión",
       descripcion: "Buscador de motores para agencias de viajes.",
-      info: "",
+      info: "Buscador para las agencias de varios productos, poder añadir productos a la cesta para checkout multiple, skeleton placeholders, varios inputs personalizados como calendario infinito en el movil, integración de apis y mucho más.",
       imgLight: "/proyectos/dit/image.png",
       imgDark: "/proyectos/dit/dit.png",
     },
@@ -51,7 +51,7 @@ function Listado() {
         <h2 className="text-5xl font-bold text-white">Algunos proyectos</h2>
         <span className="text-slate-400">Hosting en vercel</span>
       </div>
-      <div className="grid grid-cols-2 gap-10 py-4 overflow-x-auto">
+      <div className="grid lg:grid-cols-2 gap-10 py-4 overflow-x-auto">
         {proyectos.map((p) => {
           const hasVariants = p.imgLight && p.imgDark;
           const mode = imageModes[p.id] || "light";
