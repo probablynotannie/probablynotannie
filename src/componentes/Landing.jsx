@@ -36,7 +36,7 @@ function Landing() {
         <section className="px-24 p-10 flex justify-center w-full">
           <Listado />
         </section>
-        <section className="px-24 p-10 flex justify-center w-full">
+        <section className="flex justify-center w-full">
           <Proyectos />
         </section>
       </main>

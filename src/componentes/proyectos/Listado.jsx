@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
-
-import { Link } from "react-router-dom";
 
 function Listado() {
   const proyectos = [
@@ -30,7 +28,7 @@ function Listado() {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-6 py-4 overflow-x-auto">
+    <div className="grid grid-cols-2 gap-10 py-4 overflow-x-auto">
       {proyectos.map((p) => (
         <a
           to={p.url}
@@ -47,7 +45,7 @@ function Listado() {
                     : p.imgDark
                   : p.img
               }
-              className="object-cover w-full h-full transition-transform duration-500 transform group-hover:scale-110"
+              className="object-cover object-top w-full h-full transition-transform duration-500 transform group-hover:scale-110"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center transition-opacity duration-500 opacity-0 bg-black/60 group-hover:opacity-100">
               <p className="text-xl text-white">{p.info}</p>
