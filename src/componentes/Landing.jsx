@@ -23,16 +23,17 @@ function Landing() {
         <section ref={skillsRef}>
           <Skills />
         </section>
+        <section className="py-28">
+          <Educacion />
+          <Idiomas />
+        </section>
         <section
           className="px-24 p-10 flex justify-center w-full py-28"
           ref={expRef}
         >
           <Prueba />
         </section>
-        <section className="py-28">
-          <Educacion />
-          <Idiomas />
-        </section>
+
         <section className="px-24 p-10 flex justify-center w-full">
           <Listado />
         </section>
