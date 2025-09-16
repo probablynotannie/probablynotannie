@@ -1,44 +1,54 @@
 import Skills from "./landing/Skills";
-import Header from "./Header";
+import Header from "./body/Header";
 import { useRef } from "react";
 import Descripcion from "./landing/Descripcion";
 import Idiomas from "./landing/Idiomas";
-import Proyectos from "./landing/QuePido";
+import QuePido from "./landing/QuePido";
 import Listado from "./proyectos/Listado";
-import Prueba from "./landing/Prueba";
+import Experiencia from "./landing/Experiencia";
 import Educacion from "./landing/Educacion";
 function Landing() {
   const skillsRef = useRef(null);
   const homeRef = useRef(null);
   const expRef = useRef(null);
   const educacionRef = useRef(null);
+  const proyectosRef = useRef(null);
+  const quePidoRef = useRef(null);
   return (
     <>
-      <Header homeRef={homeRef} skillsRef={skillsRef} expRef={expRef} />
-
-      <main className="divide-y-2 divide-slate-700/30">
+      <Header
+        homeRef={homeRef}
+        skillsRef={skillsRef}
+        expRef={expRef}
+        educacionRef={educacionRef}
+        proyectosRef={proyectosRef}
+        quePidoRef={quePidoRef}
+      />
+      <main className="divide-y-2 divide-slate-700/30 select-none">
         <section ref={homeRef}>
           <Descripcion />
         </section>
         <section ref={skillsRef}>
           <Skills />
         </section>
-        <section className="py-28">
+        <section ref={educacionRef} className="py-28 min-h-screen">
           <Educacion />
           <Idiomas />
         </section>
         <section
-          className="px-24 p-10 flex justify-center w-full py-28"
           ref={expRef}
+          className="px-24 p-10 flex justify-center w-full py-28"
         >
-          <Prueba />
+          <Experiencia />
         </section>
-
-        <section className="px-24 p-10 flex justify-center w-full">
+        <section
+          ref={proyectosRef}
+          className="px-24 p-10 flex justify-center w-full"
+        >
           <Listado />
         </section>
-        <section className="flex justify-center w-full">
-          <Proyectos />
+        <section ref={quePidoRef} className="flex justify-center w-full">
+          <QuePido />
         </section>
       </main>
     </>

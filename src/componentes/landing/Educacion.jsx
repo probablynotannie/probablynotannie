@@ -1,6 +1,3 @@
-import React from "react";
-import { FaSchool } from "react-icons/fa";
-
 function Educacion() {
   const educacion = [
     {
@@ -18,11 +15,10 @@ function Educacion() {
   ];
 
   return (
-    <section className="container px-6 py-12 max-w-6xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-center text-slate-200 mb-12">
+    <section className="container  px-6 py-12 max-w-6xl mx-auto flex flex-col gap-10">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-slate-200">
         Educación
       </h2>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {educacion.map((ed) => (
           <div

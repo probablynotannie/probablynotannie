@@ -1,7 +1,7 @@
 import { FaDownload, FaPhone, FaSchool } from "react-icons/fa";
 import { IoAirplane } from "react-icons/io5";
 
-function Prueba() {
+function Experiencia() {
   const recorridog = [
     {
       id: 0,
@@ -87,7 +87,7 @@ function Prueba() {
   ];
 
   return (
-    <>
+    <div className="min-h-screen">
       <ol className="max-w-6xl relative border-s border-gray-200 dark:border-gray-700">
         {recorridog.reverse().map((item) => (
           <li key={item.id} className="mb-10 ms-6">
@@ -124,8 +124,8 @@ function Prueba() {
           </li>
         ))}
       </ol>
-    </>
+    </div>
   );
 }
 
-export default Prueba;
+export default Experiencia;

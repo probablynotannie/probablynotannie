@@ -38,7 +38,6 @@ export default function QuePidoOrbs() {
 
   return (
     <div className="w-full grid grid-cols-1 lg:grid-cols-2 relative overflow-hidden bg-black">
-      {/* Background Comets */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {Array.from({ length: isMobile ? 6 : 12 }).map((_, i) => (
           <span

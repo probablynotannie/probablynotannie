@@ -46,7 +46,7 @@ function Listado() {
   };
 
   return (
-    <div className="flex flex-col gap-10 justify-center">
+    <div className=" flex flex-col gap-10 justify-center">
       <div>
         <h2 className="text-5xl font-bold text-white">Algunos proyectos</h2>
         <span className="text-slate-400">Hosting en vercel</span>
