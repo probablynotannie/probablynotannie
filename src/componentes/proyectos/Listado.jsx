@@ -7,7 +7,7 @@ function Listado() {
       url: "https://volt-green.vercel.app",
       texto: "Volt",
       descripcion:
-        "Sitio web corporativo que presenta los servicios de una empresa dedicada a la revisión de contratos de luz y gas, mostrando cómo optimizan las tarifas para sus clientes.",
+        "Información sobre una empresa que se dedica mejoras de contrato de luz.",
       info: "Página simple y estática para una empresa que ofrece servicios de mejora en las tarifas de luz y gas.",
       imgLight: "/proyectos/volt/volt.png",
     },

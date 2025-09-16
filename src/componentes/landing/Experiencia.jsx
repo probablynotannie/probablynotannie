@@ -12,7 +12,7 @@ function Experiencia() {
         </span>
       ),
       nombre: "La Salle",
-      fechas: "septiembre 2021 - septiembre 2023",
+      fechas: "Septiembre 2021 - Septiembre 2023",
 
       skills: [
         "Html + CSS",
@@ -67,7 +67,7 @@ function Experiencia() {
         </span>
       ),
       nombre: "Dit Gestion",
-      fechas: "Junio 2024",
+      fechas: "Junio 2024 - actualidad",
       color: "text-laSalle",
       badge: "bg-dit/30 text-dit",
       skills: [
@@ -114,11 +114,21 @@ function Experiencia() {
             {item.id === recorridog.length - 1 && (
               <a
                 href="/CV.pdf"
-                download="Anano_Vachadze_CV.pdf"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                download="/CV.pdf"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
               >
                 <FaDownload className="me-2" />
                 Descarga mi CV en PDF
+              </a>
+            )}
+            {item.id === 0 && (
+              <a
+                href="/cartaRec.jpg"
+                target="_blank"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              >
+                <FaDownload className="me-2" />
+                Carta de recomendación
               </a>
             )}
           </li>
