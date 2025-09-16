@@ -7,7 +7,7 @@ function Experiencia() {
       id: 0,
       tipo: 0,
       icono: (
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-laSalle rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-orange-900">
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-laSalle rounded-full -start-3 ring-8 ring-white dark:ring-slate-900 dark:bg-orange-900">
           <FaSchool className="text-orange-400 text-sm" />
         </span>
       ),
@@ -34,7 +34,7 @@ function Experiencia() {
       id: 1,
       tipo: 0,
       icono: (
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-green-500 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-green-900">
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-green-500 rounded-full -start-3 ring-8 ring-white dark:ring-slate-900 dark:bg-green-900">
           <FaPhone className="text-green-400 text-sm" />
         </span>
       ),
@@ -62,7 +62,7 @@ function Experiencia() {
       id: 2,
       tipo: 0,
       icono: (
-        <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+        <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 ring-white dark:ring-slate-900 dark:bg-blue-900">
           <IoAirplane className="text-blue-400 text-xs " />
         </span>
       ),
@@ -88,17 +88,17 @@ function Experiencia() {
 
   return (
     <div className="min-h-screen">
-      <ol className="max-w-6xl relative border-s border-gray-200 dark:border-gray-700">
+      <ol className="max-w-6xl relative border-s border-slate-200 dark:border-slate-700">
         {recorridog.reverse().map((item) => (
           <li key={item.id} className="mb-10 ms-6">
             {item.icono}
             <h3 className="flex items-center mb-1 text-lg font-semibold dark:text-white">
               {item.nombre}
             </h3>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="block mb-2 text-sm font-normal leading-none text-slate-400 dark:text-slate-500">
               {item.fechas}
             </time>
-            <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            <p className="mb-4 text-base font-normal text-slate-500 dark:text-slate-400">
               {item.descripcion}
             </p>
             <ul className="flex flex-wrap gap-2 my-4">
@@ -115,7 +115,7 @@ function Experiencia() {
               <a
                 href="/CV.pdf"
                 download="/CV.pdf"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-slate-800 dark:text-slate-400 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-700"
               >
                 <FaDownload className="me-2" />
                 Descarga mi CV en PDF
@@ -125,7 +125,7 @@ function Experiencia() {
               <a
                 href="/cartaRec.jpg"
                 target="_blank"
-                className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-slate-800 dark:text-slate-400 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-700"
               >
                 <FaDownload className="me-2" />
                 Carta de recomendación
