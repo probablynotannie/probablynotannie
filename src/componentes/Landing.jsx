@@ -2,11 +2,10 @@ import Skills from "./landing/Skills";
 import Header from "./body/Header";
 import { useRef } from "react";
 import Descripcion from "./landing/Descripcion";
-import Idiomas from "./landing/Idiomas";
 import QuePido from "./landing/QuePido";
 import Listado from "./proyectos/Listado";
-import Experiencia from "./landing/Experiencia";
-import Educacion from "./landing/Educacion";
+import Experiencia from "./landing/trayectoria/Experiencia";
+import Educacion from "./landing/trayectoria/Educacion";
 function Landing() {
   const skillsRef = useRef(null);
   const homeRef = useRef(null);
@@ -33,7 +32,6 @@ function Landing() {
         </section>
         <section ref={educacionRef} className="py-28 min-h-screen">
           <Educacion />
-          <Idiomas />
         </section>
         <section
           ref={expRef}

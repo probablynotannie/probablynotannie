@@ -1,3 +1,5 @@
+import { FaCode } from "react-icons/fa";
+
 function Skills() {
   const anios_experiencia = new Date().getFullYear() - 2022;
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="h-[10vh] bg-black/50 border-t border-slate-800/60 flex justify-between items-center px-6">
+    <div className="min-h-[10vh] bg-black/50 border-t border-slate-800/60 flex justify-between items-center px-6">
       <p className="text-gray-600">
         &copy; 2025 Anano Vachadze. Todos los derechos reservados.
       </p>

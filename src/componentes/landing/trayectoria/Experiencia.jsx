@@ -88,6 +88,9 @@ function Experiencia() {
 
   return (
     <div className="min-h-screen">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-slate-200 mb-5">
+        Experiencia
+      </h2>
       <ol className="max-w-6xl relative border-s border-slate-200 dark:border-slate-700">
         {recorridog.reverse().map((item) => (
           <li key={item.id} className="mb-10 ms-6">
@@ -98,9 +101,9 @@ function Experiencia() {
             <time className="block mb-2 text-sm font-normal leading-none text-slate-400 dark:text-slate-500">
               {item.fechas}
             </time>
-            <p className="mb-4 text-base font-normal text-slate-500 dark:text-slate-400">
+            <div className="mb-4 text-sm md:text-base font-normal text-slate-500 dark:text-slate-400">
               {item.descripcion}
-            </p>
+            </div>
             <ul className="flex flex-wrap gap-2 my-4">
               {item?.skills?.map((skill, index) => (
                 <li
