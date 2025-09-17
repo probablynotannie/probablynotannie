@@ -197,6 +197,26 @@ function Skills() {
       texto: "PHP",
       svg: <img src="/skills/php.png" className="w-10" />,
     },
+    {
+      id: 12,
+      texto: "Wordpress",
+      svg: <img src="/skills/wordpress.webp" className="w-10" />,
+    },
+    {
+      id: 13,
+      texto: "flowbite",
+      svg: <img src="/skills/flowbite.png" className="w-10" />,
+    },
+    {
+      id: 14,
+      texto: "React Hook Forms",
+      svg: <img src="/skills/reactHook.svg" className="w-10" />,
+    },
+    {
+      id: 15,
+      texto: "Leaflet",
+      svg: <img src="/skills/leaflet.png" className="w-10 rounded-lg" />,
+    },
   ];
 
   return (
