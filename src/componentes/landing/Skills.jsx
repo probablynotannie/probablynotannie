@@ -131,7 +131,7 @@ function Skills() {
     {
       id: 7,
       texto: "Vite",
-      svg: <img src="/skills/vite.svg" className="w-10" />,
+      svg: <img src="/skills/vite.png" className="w-10" />,
     },
     {
       id: 8,
