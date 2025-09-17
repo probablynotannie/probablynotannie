@@ -57,58 +57,6 @@ function Skills() {
       svg: <img src="/skills/zustand.png" className="w-10" />,
     },
     {
-      id: 4,
-      texto: "HTML5",
-      svg: (
-        <span className="text-4xl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 256 256"
-          >
-            <g fill="none">
-              <rect width="256" height="256" fill="#E14E1D" rx="60" />
-              <path
-                fill="#fff"
-                d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"
-              />
-              <path
-                fill="#EBEBEB"
-                d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"
-              />
-            </g>
-          </svg>
-        </span>
-      ),
-    },
-    {
-      id: 5,
-      texto: "CSS",
-      svg: (
-        <span className="text-4xl">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            viewBox="0 0 256 256"
-          >
-            <g fill="none">
-              <rect width="256" height="256" fill="#0277BD" rx="60" />
-              <path
-                fill="#EBEBEB"
-                d="m53.753 102.651l2.862 31.942h71.481v-31.942zM128.095 38H48l2.904 31.942h77.191zm0 180.841v-33.233l-.14.037l-35.574-9.605l-2.274-25.476H58.042l4.475 50.154l65.431 18.164z"
-              />
-              <path
-                fill="#fff"
-                d="m167.318 134.593l-3.708 41.426l-35.625 9.616v33.231l65.483-18.148l.48-5.397l7.506-84.092l.779-8.578L208 38h-80.015v31.942h45.009l-2.906 32.709h-42.103v31.942z"
-              />
-            </g>
-          </svg>
-        </span>
-      ),
-    },
-    {
       id: 6,
       texto: "JavaScript",
       svg: (
@@ -130,11 +78,7 @@ function Skills() {
         </span>
       ),
     },
-    {
-      id: 7,
-      texto: "Vite",
-      svg: <img src="/skills/vite.png" className="w-10" />,
-    },
+
     {
       id: 8,
       texto: "Bootstrap",
@@ -214,11 +158,6 @@ function Skills() {
       texto: "React Hook Forms",
       svg: <img src="/skills/reactHook.svg" className="w-10" />,
     },
-    {
-      id: 15,
-      texto: "Leaflet",
-      svg: <img src="/skills/leaflet.png" className="w-10 rounded-lg" />,
-    },
   ];
 
   return (
@@ -242,7 +181,7 @@ function Skills() {
           </p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-center">
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {herramientas.map((herramienta) => (
               <div key={herramienta.id} className="text-center">
                 <div className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
