@@ -11,7 +11,7 @@ function Footer() {
           href="https://www.linkedin.com/in/probablynotannie"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-600 hover:text-white"
+          className="text-gray-600 hover:text-white cursor-pointer"
         >
           LinkedIn
         </a>
