@@ -1,14 +1,6 @@
-import React from "react";
 import Idiomas from "./educacion/Idiomas";
-import EducacionOficial from "./educacion/Educacion";
-import {
-  FaCode,
-  FaCodeBranch,
-  FaFlag,
-  FaGithub,
-  FaSchool,
-  FaSuitcase,
-} from "react-icons/fa";
+import EducacionComponent from "./educacion/Educacion";
+import { FaCode, FaFlag, FaGithub, FaSchool } from "react-icons/fa";
 function Educacion() {
   return (
     <div className="relative">
@@ -27,7 +19,7 @@ function Educacion() {
         </span>
       </div>
 
-      <EducacionOficial />
+      <EducacionComponent />
       <Idiomas />
       <style jsx>{`
         .orb {
