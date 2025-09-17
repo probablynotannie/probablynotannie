@@ -21,7 +21,7 @@ function Educacion() {
 
       <EducacionComponent />
       <Idiomas />
-      <style jsx>{`
+      <style>{`
         .orb {
           animation: float 10s infinite ease-in-out alternate;
           pointer-events: none;
