@@ -173,7 +173,7 @@ function Skills() {
               Algunas de las herramientas que uso
             </h2>
           </div>
-          <p className="p-3 text-gray-400 text-sm leading-relaxed">
+          <p className="p-3 text-gray-400 text-sm leading-relaxed text-justify">
             Con {anios_experiencia} años de experiencia en desarrollo front-end,
             cada día descubriendo nuevas tecnologias que usar y mejorar.
             <br></br> Estoy en busca de nuevos retos donde pueda aportar lo que
@@ -183,10 +183,13 @@ function Skills() {
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {herramientas.map((herramienta) => (
-              <div key={herramienta.id} className="text-center">
+              <div
+                key={herramienta.id}
+                className="text-center flex flex-col justify-end"
+              >
                 <div className="p-4 bg-secondary rounded-lg shadow-lg flex flex-col justify-center items-center">
-                  <span className="text-4xl">{herramienta.svg}</span>
-                  <p className="text-xs mt-2">{herramienta.texto}</p>
+                  {herramienta.svg}
+                  <h3 className="text-xs mt-2">{herramienta.texto}</h3>
                 </div>
               </div>
             ))}
