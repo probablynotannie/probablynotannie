@@ -4,6 +4,7 @@ function Listado() {
   const proyectos = [
     {
       id: 0,
+      visible: 1,
       url: "https://volt-green.vercel.app",
       texto: "Volt",
       descripcion:
@@ -13,6 +14,7 @@ function Listado() {
     },
     {
       id: 1,
+      visible: 1,
       url: "https://buscadormotores.vercel.app",
       texto: "Dit Gestión",
       descripcion: "Buscador de motores para agencias de viajes.",
@@ -22,6 +24,7 @@ function Listado() {
     },
     {
       id: 2,
+      visible: 1,
       url: "https://cargadortabs.vercel.app",
       texto: "Tabs agencias",
       descripcion: "Herramienta para controlar precios de las habitaciones.",
@@ -60,7 +63,9 @@ function Listado() {
               href={p.url}
               target="_blank"
               key={p.id}
-              className="relative flex-none overflow-hidden shadow-lg select-none rounded-xl"
+              className={`relative flex-none overflow-hidden shadow-lg select-none rounded-xl
+                ${p.visible === 0 && "hidden"}
+                `}
             >
               <div className="w-full h-[350px] overflow-hidden group rounded-t-xl relative">
                 <img
