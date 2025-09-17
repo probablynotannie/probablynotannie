@@ -8,10 +8,9 @@ function Footer() {
       </p>
       <div className="flex gap-4">
         <a
-          href="www.linkedin.com/in/probablynotannie
-
-"
+          href="https://www.linkedin.com/in/probablynotannie"
           target="_blank"
+          rel="noopener noreferrer"
           className="text-gray-600 hover:text-white"
         >
           LinkedIn
