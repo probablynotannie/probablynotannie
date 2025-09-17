@@ -1,12 +1,19 @@
 import React from "react";
 import Idiomas from "./educacion/Idiomas";
 import EducacionOficial from "./educacion/Educacion";
-import { FaCode, FaFlag, FaSchool } from "react-icons/fa";
+import {
+  FaCode,
+  FaCodeBranch,
+  FaFlag,
+  FaGithub,
+  FaSchool,
+  FaSuitcase,
+} from "react-icons/fa";
 function Educacion() {
   return (
     <div className="relative">
       <div className="absolute inset-0 pointer-events-none ">
-        <span className="orb absolute left-20 -bottom-[20%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:2s]">
+        <span className="orb absolute left-20 bottom-[20%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:2s]">
           <FaCode className="text-pink-500 text-[16rem] blur-[17px] opacity-20" />
         </span>
         <span className="orb absolute right-[10%] top-[40%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:5s]">
@@ -14,6 +21,9 @@ function Educacion() {
         </span>
         <span className="orb absolute left-[40%] -top-[15%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:7s]">
           <FaSchool className="text-blue-200 text-[16rem] blur-[17px] opacity-20" />
+        </span>
+        <span className="orb absolute right-[50%] -bottom-[35%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:7s]">
+          <FaGithub className="text-orange-800 text-[16rem] blur-[17px] opacity-20" />
         </span>
       </div>
 
