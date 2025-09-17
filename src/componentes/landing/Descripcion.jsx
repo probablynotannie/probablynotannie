@@ -56,7 +56,7 @@ function Descripcion() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden pt-[15vh]">
       <div className="absolute inset-0"></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center">
@@ -65,7 +65,7 @@ function Descripcion() {
               Anano Vachadze
             </h1>
 
-            <h2 className="typewrite text-white min-h-8">
+            <h2 className="typewrite text-white min-h-[13vh]">
               <span className="block text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8 parallax-element min-h-[6rem] ">
                 {text}
               </span>
