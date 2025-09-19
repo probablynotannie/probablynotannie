@@ -2,7 +2,12 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-    background: rgb(15, 14, 23);
+       
+            background: rgb(15, 14, 23);
+    }
+    #root{
+       width: 100vw;
+        overflow-x: hidden;
     }
    .floating-orb {
       position: absolute;

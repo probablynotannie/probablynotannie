@@ -37,13 +37,13 @@ function Landing() {
         </section>
         <section
           ref={expRef}
-          className="px-24 p-10 flex justify-center w-full py-28"
+          className="md:px-24 p-10 flex justify-center w-full py-28"
         >
           <Experiencia />
         </section>
         <section
           ref={proyectosRef}
-          className="px-24 p-10 flex justify-center w-full"
+          className="md:px-24 p-10 flex justify-center w-full"
         >
           <Listado />
         </section>
@@ -53,7 +53,6 @@ function Landing() {
         >
           <div className="bg-gradient-to-b from-black to-gray-900/40 ">
             <QuienSoy />
-
             <PuntosFuertes />
             <QuePido />
           </div>

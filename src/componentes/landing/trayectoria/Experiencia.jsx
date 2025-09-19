@@ -82,7 +82,7 @@ function Experiencia() {
         "APIs",
       ],
       descripcion:
-        " Páginas B2B y B2C para agencias de viajes, enfocadas en una  experiencia de usuario fluida y eficiente, utilizando componentes reutilizables e inputs diseñadas de cero. Asi mismo mplementado motores de búsqueda y sistemas de filtrado, así como integraciones con APIs externas.",
+        " Páginas B2B y B2C para agencias de viajes, enfocadas en una  experiencia de usuario fluida y eficiente, utilizando componentes reutilizables e inputs diseñadas de cero. Asi mismo implementado motores de búsqueda y sistemas de filtrado, así como integraciones con APIs externas.",
     },
   ];
 
