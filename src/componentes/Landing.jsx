@@ -6,6 +6,8 @@ import QuePido from "./landing/QuePido";
 import Listado from "./proyectos/Listado";
 import Experiencia from "./landing/trayectoria/Experiencia";
 import Educacion from "./landing/trayectoria/Educacion";
+import PuntosFuertes from "./landing/PuntosFuertes";
+import QuienSoy from "./landing/yo/QuienSoy";
 function Landing() {
   const skillsRef = useRef(null);
   const homeRef = useRef(null);
@@ -45,8 +47,16 @@ function Landing() {
         >
           <Listado />
         </section>
-        <section ref={quePidoRef} className="flex justify-center w-full">
-          <QuePido />
+        <section
+          ref={quePidoRef}
+          className="flex justify-center flex-col w-full"
+        >
+          <div className="bg-gradient-to-b from-black to-gray-900/40 ">
+            <QuienSoy />
+
+            <PuntosFuertes />
+            <QuePido />
+          </div>
         </section>
       </main>
     </>

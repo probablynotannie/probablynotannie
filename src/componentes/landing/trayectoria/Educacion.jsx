@@ -18,7 +18,6 @@ function Educacion() {
           <FaGithub className="text-orange-800 text-[16rem] blur-[17px] opacity-20" />
         </span>
       </div>
-
       <EducacionComponent />
       <Idiomas />
       <style>{`

@@ -23,7 +23,7 @@ function Educacion() {
         {educacion.map((ed) => (
           <div
             key={ed.id}
-            className="relative overflow-hidden min-h-[110px] bg-slate-900 border border-slate-700 rounded-2xl px-6 py-8 flex items-center shadow hover:shadow-pink-500/20 transition-all duration-300"
+            className="relative overflow-hidden min-h-[110px] bg-slate-900/10 border border-pink-700/20 rounded-2xl px-6 py-8 flex items-center shadow hover:shadow-pink-500/20 transition-all duration-300"
           >
             <div className="absolute -left-19 top-1/2 -translate-y-1/2 rotate-[-90deg] bg-pink-600 w-[180px] h-[30px] flex items-center justify-center text-white text-xs font-bold rounded tracking-wider shadow-md">
               {ed.colegio}

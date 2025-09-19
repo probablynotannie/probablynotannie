@@ -49,7 +49,7 @@ function Header({
     },
     {
       id: 4,
-      texto: "Que pido / ofrezco",
+      texto: "Conoceme",
       icono: <img src="/logo.png" className="w-8 h-8 cursor-pointer" />,
       ref: quePidoRef,
     },

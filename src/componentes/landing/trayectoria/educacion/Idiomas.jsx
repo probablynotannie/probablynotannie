@@ -46,7 +46,7 @@ function Idiomas() {
           return (
             <div
               key={idioma.id}
-              className="bg-slate-900 border border-slate-700 rounded-xl p-5 flex flex-col items-center shadow hover:shadow-cyan-500/10 transition-all"
+              className="bg-slate-900/10 border border-cyan-400/10 rounded-xl p-5 flex flex-col items-center shadow hover:shadow-cyan-500/10 transition-all"
             >
               <h3 className="text-lg font-bold text-slate-200 mb-4">
                 {idioma.idioma}
