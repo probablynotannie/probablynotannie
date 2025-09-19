@@ -1,3 +1,5 @@
+import { FaStar } from "react-icons/fa";
+
 function QuienSoy() {
   return (
     <section className="relative min-h-screen flex justify-center items-center overflow-hidden ">
@@ -62,7 +64,7 @@ function QuienSoy() {
               trabajo estable con posibilidad de teletrabajo
             </span>{" "}
             que me permita crecer como desarrolladora y, al mismo tiempo,
-            cumplir este sueño. 🚀
+            cumplir este sueño.
           </p>
         </div>
       </div>
