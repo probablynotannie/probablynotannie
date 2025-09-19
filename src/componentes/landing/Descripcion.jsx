@@ -56,7 +56,7 @@ function Descripcion() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden pt-[15vh]">
+    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden pt-[15vh] py-10">
       <div className="absolute inset-0"></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center">
