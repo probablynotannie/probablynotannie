@@ -47,7 +47,7 @@ function QuienSoy() {
           {"for(let i=0;i<10;i++){ console.log('Learning'); }"}
         </p>
         <p className="absolute text-teal-400 opacity-20 text-xs top-2/3 left-1/4 animate-glow">
-          {"const goals = ['Grow', 'Teach', 'Build'];"}
+          {"const goals = ['Grow', 'Learn', 'Build'];"}
         </p>
         <p className="absolute text-orange-400 opacity-20 text-xs bottom-1/4 left-2/3 animate-pulse">
           {"// Always curious"}
