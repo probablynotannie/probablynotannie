@@ -17,7 +17,7 @@ function QuienSoy() {
           <span className="text-yellow-400">"Frontend Developer"</span>, <br />
           &nbsp;&nbsp;<span className="text-pink-400">"hobbies"</span>:{" "}
           <span className="text-yellow-400">
-            ["VideoGames","Eat","Programming"]
+            ["VideoGames","Eating","Programming"]
           </span>{" "}
           <br />
           {"}"}
