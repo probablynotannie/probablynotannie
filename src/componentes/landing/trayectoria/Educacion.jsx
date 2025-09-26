@@ -1,6 +1,8 @@
 import Idiomas from "./educacion/Idiomas";
 import EducacionComponent from "./educacion/Educacion";
-import { FaCode, FaFlag, FaGithub, FaSchool } from "react-icons/fa";
+import { FaCode, FaGithub, FaReact } from "react-icons/fa";
+import { BiLogoVisualStudio } from "react-icons/bi";
+
 function Educacion() {
   return (
     <div className="relative">
@@ -9,10 +11,10 @@ function Educacion() {
           <FaCode className="text-pink-500 text-[16rem] blur-[17px] opacity-20" />
         </span>
         <span className="orb absolute right-[10%] top-[40%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:5s]">
-          <FaFlag className="text-blue-300 text-[12rem] blur-[17px] opacity-20" />
+          <BiLogoVisualStudio className="text-blue-300 text-[12rem] blur-[17px] opacity-20" />
         </span>
         <span className="orb absolute left-[40%] -top-[15%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:7s]">
-          <FaSchool className="text-blue-200 text-[16rem] blur-[17px] opacity-20" />
+          <FaReact className="text-blue-200 text-[16rem] blur-[17px] opacity-20" />
         </span>
         <span className="orb absolute right-[50%] -bottom-[35%] animate-[float_10s_ease-in-out_infinite_alternate] [animation-delay:7s]">
           <FaGithub className="text-orange-800 text-[16rem] blur-[17px] opacity-20" />

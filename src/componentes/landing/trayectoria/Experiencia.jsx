@@ -78,7 +78,6 @@ function Experiencia() {
         "Hooks personalizados",
         "React Query",
         "Tanstack",
-        "Zustand",
         "APIs",
       ],
       descripcion:
@@ -121,7 +120,7 @@ function Experiencia() {
                 className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-slate-800 dark:text-slate-400 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-700"
               >
                 <FaDownload className="me-2" />
-                Descarga mi CV en PDF
+                Mi CV en PDF
               </a>
             )}
             {item.id === 0 && (
