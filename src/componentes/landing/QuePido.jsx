@@ -7,7 +7,7 @@ const imagesData = [
       { text: "Feedback", color: "pink", top: 10, left: 15 },
       { text: "Salario competitivo", color: "pink", top: 20, right: 5 },
       { text: "Crecimiento", color: "pink", bottom: 13, left: 10 },
-      { text: "Formación", color: "pink", bottom: 50, left: 0 },
+      { text: "Respeto", color: "pink", bottom: 50, left: 0 },
       { text: "Estabilidad", color: "pink", bottom: 40, right: 2 },
       { text: "Teletrabajo", color: "pink", bottom: 12, right: 16 },
       { text: "Jornada intensiva", color: "pink", bottom: -5, right: 40 },
