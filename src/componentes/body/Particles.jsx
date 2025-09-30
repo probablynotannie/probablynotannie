@@ -1,5 +1,3 @@
-import React from "react";
-
 function Particulos() {
   return (
     <div className="overflow-x-hidden">

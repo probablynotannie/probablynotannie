@@ -1,0 +1,123 @@
+{
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  },
+  "copiado": "copiado",
+  "educacion": "educación",
+  "experiencia": "experiencia",
+  "proyectos": "proyectos",
+  "actualidad": "actualidad",
+  "hooksPersonalizados": "Hooks Personalizados",
+  "yo": "yo",
+  "herramientas": {
+    "titulo": "Algunas de las herramientas que uso",
+    "descripcion": "años de experiencia en desarrollo front-end, cada día descubriendo nuevas tecnologías que usar y mejorar.",
+    "descripcion2": "Estoy en busca de nuevos retos donde pueda aportar lo que sé y aprender aún más en el camíno."
+  },
+  "headerText": {
+    "texto1": "Desarrolladora Front-End, aprendiendo y mejorando cada día.",
+    "texto2": "Componentes reutilizables, diseño responsive y atención al detalle.",
+    "texto3": "Siempre en busca de nuevos proyectos para innovar y seguir creciendo."
+  },
+  "educacionExp": {
+    "gradoMedio": "Grado Medio",
+    "gradoSuperior": "Grado Superior",
+    "tituloMedio": "Sistemas Microincormáticos",
+    "tituloSuperior": "Desarrollo de Aplicaciones Web",
+    "eng": "Inglés",
+    "esp": "Español",
+    "geo": "Georgiano",
+    "rus": "Ruso",
+    "eus": "Euskera"
+  },
+  "experienciaExp": {
+    "cmsIntern": "CMS Interno",
+    "cartaRec": "Carta de recomendación",
+    "cv": "Mi CV en PDF",
+    "laSalle": "Desarrollo Full Stack, enfocado en la creación de páginas web dinámicas de todas las páginas de colegios de La Salle. Diseño desde 0 de páginas internas de La Salle para la sede de Donosti.",
+    "ayesa": "Servicio técnico telemático: apoyo en la resolución de incidencias de acceso, software y problemas técnicos. Ayuda con el diseño de las páginas de formación de otros técnicos utilizando CMS interno.",
+    "ayesa2": " Ayuda con el diseño de las páginas de formación de otros técnicos utilizando CMS interno.",
+    "dit": "Páginas B2B y B2C para agencias de viajes, enfocadas en una experiencia de usuario fluida y eficiente, utilizando componentes reutilizables e inputs diseñadas de cero. Asi mismo implementado motores de búsqueda y sistemas de filtrado, así como integraciones con APIs externas."
+  },
+  "meses": {
+    "ene": "enero",
+    "feb": "febrero",
+    "mar": "marzo",
+    "abr": "abril",
+    "may": "mayo",
+    "jun": "junio",
+    "jul": "julio",
+    "ago": "agosto",
+    "sep": "septiembre",
+    "oct": "octubre",
+    "nov": "noviembre",
+    "dic": "diciembre"
+  },
+
+  "descripcion": {
+    "part1": "Soy ",
+    "name": "Anano",
+    "part2": ", de Georgia 🌍. Una de mis grandes metas es vivir en un entorno ",
+    "highlight1": "rural",
+    "part3": " y estoy trabajando para hacerlo realidad. Busco un ",
+    "highlight2": "trabajo estable con posibilidad de teletrabajo",
+    "part4": " que me permita crecer como desarrolladora y, al mismo tiempo, cumplir este sueño."
+  },
+  "misProyectos": {
+    "titulo": "Algunos proyectos",
+    "subTitulo": "Hosting en vercel",
+    "volt": {
+      "descBreve": "Información sobre una empresa que se dedica mejoras de contrato de luz.",
+      "descripcion": "Página simple y estática para una empresa que ofrece servicios de mejora en las tarifas de luz y gas."
+    },
+    "dit": {
+      "descBreve": "Buscador de motores para agencias de viajes.",
+      "descripcion": "Buscador para las agencias de varios productos, poder añadir productos a la cesta para checkout multiple, skeleton placeholders, varios inputs personalizados como calendario infinito en el movil, integración de apis y mucho más."
+    },
+    "tabs": {
+      "descBreve": "Herramienta para controlar precios de las habitaciones.",
+      "descripcion": "Herramienta para que las agencias puedan poner precios, disminuir, borrar, aumentar o deshabilitar las habitaciones por regimen y por fecha."
+    }
+  },
+  "misPuntos": {
+    "titulo": "Mis puntos como desarrolladora",
+    "fortalezas": {
+      "titulo": "Fortalezas",
+      "1": "Rápido aprendizaje de nuevas tecnologías",
+      "2": "Curiosidad constante: disfruto investigando nuevas tendencias y buenas prácticas",
+      "3": "Organización y compromiso con los proyectos",
+      "4": "Pasión por el trabajo",
+      "5": "Proactividad: identifico mejoras y optimizo procesos cuando es posible si hay tiempo libre",
+      "6": "Capacidad de trabajar de forma autónoma",
+      "7": "Comprensión: me esfuerzo en entender los objetivos de los demás para alinear mejor mi trabajo"
+    },
+    "debilidades": {
+      "titulo": "Áreas de mejora",
+      "1": "A veces me gusta alternar entre varias tareas del proyecto a la vez para no volverme loca",
+      "2": "Si lo anterior se me olvida, me quedo en bucle con una tarea hasta solucionarlo, es decir, me vuelvo loca :)",
+      "3": "Mi motivación e interes puede disminuir si percibo que el esfuerzo no es equitativo en el equipo",
+      "4": "Impaciencia: a veces me frustro si los avances son más lentos de lo esperado",
+      "5": "Pedir ayuda: me cuesta solicitar apoyo al inicio, prefiero intentar resolver todo sola"
+    }
+  },
+  "quePido": {
+    "busco": "Busco",
+    "ofrezco": "Ofrezco",
+    "queBusco": {
+      "1": "Salario competitivo",
+      "2": "Respeto",
+      "3": "Estabilidad",
+      "4": "Crecimiento",
+      "5": "Jornada intensiva",
+      "6": "Teletrabajo"
+    },
+    "queOfrezco": {
+      "1": "Compromiso",
+      "2": "Organización",
+      "3": "Adaptabilidad",
+      "4": "Flexibilidad",
+      "5": "Comunicación",
+      "6": "Responsabilidad"
+    }
+  }
+}

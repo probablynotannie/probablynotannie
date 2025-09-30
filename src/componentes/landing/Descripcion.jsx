@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Descripcion() {
+  const { t } = useTranslation();
+
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [delta, setDelta] = useState(200 - Math.random() * 100);
   const [copiedIndex, setCopiedIndex] = useState(null);
   const texts = [
-    "Desarrolladora Front-End, aprendiendo y mejorando cada día.",
-    "Componentes reutilizables, diseño responsive y atención al detalle.",
-    "Siempre en busca de nuevos proyectos para innovar y seguir creciendo.",
+    t("headerText.texto1"),
+    t("headerText.texto2"),
+    t("headerText.texto3"),
   ];
 
   const period = 3000;
@@ -87,7 +90,7 @@ function Descripcion() {
             </p>
             {copiedIndex === index && (
               <span className="absolute top-2 right-2 bg-pink-600 text-white text-xs px-2 py-1 rounded opacity-90 animate-fadeInOut">
-                Copiado
+                {t("copiado")}
               </span>
             )}
           </div>

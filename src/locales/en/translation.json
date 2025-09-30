@@ -1,0 +1,122 @@
+{
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "copiado": "copied",
+  "educacion": "education",
+  "experiencia": "experience",
+  "proyectos": "projects",
+  "actualidad": "current",
+  "yo": "about me",
+  "herramientas": {
+    "titulo": "Some of the tools I use",
+    "descripcion": "Years of experience in front-end development, discovering new technologies to use and improve every day.",
+    "descripcion2": "I am looking for new challenges where I can contribute what I know and learn even more along the way."
+  },
+  "headerText": {
+    "texto1": "Front-End Developer, learning and improving every day.",
+    "texto2": "Reusable components, responsive design and attention to detail.",
+    "texto3": "Always looking for new projects to innovate and keep growing."
+  },
+  "hooksPersonalizados": "Custom Hooks",
+  "educacionExp": {
+    "gradoMedio": "Intermediate Degree",
+    "gradoSuperior": "Higher Degree",
+    "tituloMedio": "Microcomputer Systems",
+    "tituloSuperior": "Web Application Development",
+    "eng": "English",
+    "esp": "Spanish",
+    "geo": "Georgian",
+    "rus": "Russian",
+    "eus": "Basque"
+  },
+  "experienciaExp": {
+    "cmsIntern": "Internal CMS",
+    "cartaRec": "Recommendation Letter",
+    "cv": "My CV in PDF",
+    "laSalle": "Full Stack Development, focused on creating dynamic websites for all La Salle school pages. Designed internal pages from scratch for the Donosti campus.",
+    "ayesa": "Remote technical support: assisting in solving access issues, software, and technical problems. Helped design training pages for other technicians using the internal CMS.",
+    "ayesa2": "Helped design training pages for other technicians using the internal CMS.",
+    "dit": "B2B and B2C pages for travel agencies, focused on a smooth and efficient user experience, using reusable components and custom inputs designed from scratch. Implemented search engines, filtering systems, and external API integrations."
+  },
+  "meses": {
+    "ene": "January",
+    "feb": "February",
+    "mar": "March",
+    "abr": "April",
+    "may": "May",
+    "jun": "June",
+    "jul": "July",
+    "ago": "August",
+    "sep": "September",
+    "oct": "October",
+    "nov": "November",
+    "dic": "December"
+  },
+  "descripcion": {
+    "part1": "I am ",
+    "name": "Anano",
+    "part2": ", from Georgia 🌍. One of my biggest goals is to live in a ",
+    "highlight1": "rural environment",
+    "part3": " and I am working to make it happen. I am looking for a ",
+    "highlight2": "stable job with remote work possibilities",
+    "part4": " that allows me to grow as a developer while pursuing this dream."
+  },
+  "misProyectos": {
+    "titulo": "Some Projects",
+    "subTitulo": "Hosted on Vercel",
+    "volt": {
+      "descBreve": "Information about a company that improves electricity contracts.",
+      "descripcion": "Simple static page for a company providing electricity and gas rate improvement services."
+    },
+    "dit": {
+      "descBreve": "Search engine for travel agencies.",
+      "descripcion": "Search tool for agencies to manage multiple products, add them to a multi-checkout cart, skeleton placeholders, multiple custom inputs like infinite mobile calendar, API integration, and much more."
+    },
+    "tabs": {
+      "descBreve": "Tool to control room prices.",
+      "descripcion": "Tool that allows agencies to set, reduce, delete, increase, or disable room prices per plan and date."
+    }
+  },
+  "misPuntos": {
+    "titulo": "My strengths as a developer",
+    "fortalezas": {
+      "titulo": "Strengths",
+      "1": "Quick learner of new technologies",
+      "2": "Constant curiosity: I enjoy researching new trends and best practices",
+      "3": "Organization and commitment to projects",
+      "4": "Passion for work",
+      "5": "Proactivity: I identify improvements and optimize processes when possible if there is free time",
+      "6": "Ability to work independently",
+      "7": "Understanding: I make an effort to understand others’ goals to better align my work"
+    },
+    "debilidades": {
+      "titulo": "Areas for improvement",
+      "1": "Sometimes I like to switch between multiple project tasks at once to avoid getting stuck",
+      "2": "If I forget, I can get stuck on a task until I solve it, meaning I get a little lost :)",
+      "3": "My motivation and interest can decrease if I feel effort is not balanced within the team",
+      "4": "Impatience: sometimes I get frustrated if progress is slower than expected",
+      "5": "Asking for help: I find it difficult to ask for support at the beginning, I prefer to try solving everything on my own"
+    }
+  },
+  "quePido": {
+    "busco": "I am looking for",
+    "ofrezco": "I offer",
+    "queBusco": {
+      "1": "Competitive salary",
+      "2": "Respect",
+      "3": "Stability",
+      "4": "Growth",
+      "5": "Intensive schedule",
+      "6": "Remote work"
+    },
+    "queOfrezco": {
+      "1": "Commitment",
+      "2": "Organization",
+      "3": "Adaptability",
+      "4": "Flexibility",
+      "5": "Communication",
+      "6": "Responsibility"
+    }
+  }
+}

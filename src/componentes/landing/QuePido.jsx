@@ -1,32 +1,4 @@
-const imagesData = [
-  {
-    id: 0,
-    src: "/logo.png",
-    texto: "Busco",
-    tags: [
-      { text: "Feedback", color: "pink", top: 10, left: 15 },
-      { text: "Salario competitivo", color: "pink", top: 20, right: 5 },
-      { text: "Crecimiento", color: "pink", bottom: 13, left: 10 },
-      { text: "Respeto", color: "pink", bottom: 50, left: 0 },
-      { text: "Estabilidad", color: "pink", bottom: 40, right: 2 },
-      { text: "Teletrabajo", color: "pink", bottom: 12, right: 16 },
-      { text: "Jornada intensiva", color: "pink", bottom: -5, right: 40 },
-    ],
-  },
-  {
-    id: 1,
-    src: "/costado.png",
-    texto: "Ofrezco",
-    tags: [
-      { text: "Compromiso", color: "green", top: 24, left: 10 },
-      { text: "Organización", color: "green", top: 20, right: 20 },
-      { text: "Adaptabilidad", color: "green", top: 45, right: 6 },
-      { text: "Flexibilidad", color: "green", top: 55, left: 3 },
-      { text: "Comunicación", color: "green", bottom: 8, left: 20 },
-      { text: "Responsabilidad", color: "green", bottom: 14, right: 10 },
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const colorMap = {
   pink: "bg-pink-500 border-pink-400",
@@ -34,6 +6,47 @@ const colorMap = {
 };
 
 export default function QuePidoOrbs() {
+  const { t } = useTranslation();
+  const imagesData = [
+    {
+      id: 0,
+      src: "/logo.png",
+      texto: t("quePido.busco"),
+      tags: [
+        { text: "Feedback", color: "pink", top: 10, left: 15 },
+        { text: t("quePido.queBusco.1"), color: "pink", top: 20, right: 5 },
+        { text: t("quePido.queBusco.4"), color: "pink", bottom: 13, left: 10 },
+        { text: t("quePido.queBusco.2"), color: "pink", bottom: 50, left: 0 },
+        { text: t("quePido.queBusco.3"), color: "pink", bottom: 40, right: 2 },
+        { text: t("quePido.queBusco.6"), color: "pink", bottom: 12, right: 16 },
+        { text: t("quePido.queBusco.5"), color: "pink", bottom: -5, right: 40 },
+      ],
+    },
+    {
+      id: 1,
+      src: "/costado.png",
+      texto: t("quePido.ofrezco"),
+
+      tags: [
+        { text: t("quePido.queOfrezco.1"), color: "green", top: 24, left: 10 },
+        { text: t("quePido.queOfrezco.2"), color: "green", top: 20, right: 20 },
+        { text: t("quePido.queOfrezco.3"), color: "green", top: 45, right: 6 },
+        { text: t("quePido.queOfrezco.4"), color: "green", top: 55, left: 3 },
+        {
+          text: t("quePido.queOfrezco.5"),
+          color: "green",
+          bottom: 8,
+          left: 20,
+        },
+        {
+          text: t("quePido.queOfrezco.6"),
+          color: "green",
+          bottom: 14,
+          right: 10,
+        },
+      ],
+    },
+  ];
   const isMobile =
     typeof window !== "undefined" ? window.innerWidth < 768 : false;
 

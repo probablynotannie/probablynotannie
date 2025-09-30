@@ -1,5 +1,6 @@
-
+import { useTranslation } from "react-i18next";
 function QuienSoy() {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-screen flex justify-center items-center overflow-hidden ">
       <div className="absolute top-20 left-10 w-72 h-72 bg-green-500 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
@@ -55,15 +56,18 @@ function QuienSoy() {
       <div className="relative z-10 max-w-2xl text-center px-6">
         <div className="p-6 sm:p-8 rounded-2xl bg-slate-900/30 backdrop-blur-md border border-pink-400/30 shadow-xl animate-fadeIn">
           <p className="text-lg sm:text-xl leading-relaxed text-gray-200">
-            Soy <span className="text-pink-400 font-semibold">Anano</span>, de
-            Georgia 🌍. Una de mis grandes metas es vivir en un entorno{" "}
-            <span className="text-green-500 font-semibold">rural</span> y estoy
-            trabajando para hacerlo realidad. Busco un{" "}
+            {t("descripcion.part1")}
+            <span className="text-pink-400 font-semibold">Anano</span>
+            {t("descripcion.part2")}
+            <span className="text-green-500 font-semibold">
+              {t("descripcion.highlight1")}
+            </span>
+            {t("descripcion.part3")}
+
             <span className="text-purple-400 font-semibold">
-              trabajo estable con posibilidad de teletrabajo
-            </span>{" "}
-            que me permita crecer como desarrolladora y, al mismo tiempo,
-            cumplir este sueño.
+              {t("descripcion.highlight2")}
+            </span>
+            {t("descripcion.part4")}
           </p>
         </div>
       </div>

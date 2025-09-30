@@ -2,6 +2,8 @@ import { FaCode } from "react-icons/fa";
 import { FaSchool } from "react-icons/fa";
 import { FaTimeline } from "react-icons/fa6";
 import { FaSuitcase } from "react-icons/fa";
+import LanguageSwitcher from "./LangSwitch";
+import { useTranslation } from "react-i18next";
 function Header({
   homeRef,
   skillsRef,
@@ -21,6 +23,8 @@ function Header({
       behavior: "smooth",
     });
   }
+  const { t } = useTranslation();
+
   const secciones = [
     {
       id: 0,
@@ -30,26 +34,26 @@ function Header({
     },
     {
       id: 1,
-      texto: "Educación",
+      texto: t("educacion"),
       icono: <FaSchool className="text-cyan-400" />,
       ref: educacionRef,
     },
     {
       id: 2,
-      texto: "Experiencia",
+      texto: t("experiencia"),
       icono: <FaTimeline className="text-indigo-400" />,
 
       ref: expRef,
     },
     {
       id: 3,
-      texto: "Proyectos",
+      texto: t("proyectos"),
       icono: <FaSuitcase className="text-red-400" />,
       ref: proyectosRef,
     },
     {
       id: 4,
-      texto: "Conoceme",
+      texto: t("yo"),
       icono: <img src="/logo.png" className="w-8 h-8 cursor-pointer" />,
       ref: quePidoRef,
     },
@@ -69,20 +73,23 @@ function Header({
               </button>
             </div>
           </div>
-          <div className="hidden lg:flex items-center space-x-8 text-slate-400">
-            {secciones.map((seccion) => (
-              <div key={seccion.id} className="relative group">
-                <button
-                  onClick={() => handleScroll(seccion.ref)}
-                  className="cursor-pointer flex items-center justify-center p-2 rounded-full transition-all duration-300 hover:bg-white/10"
-                >
-                  {seccion.icono}
-                </button>
-                <span className="absolute left-1/2 -translate-x-1/2 top-10 whitespace-nowrap rounded bg-pink-500 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                  {seccion.texto}
-                </span>
-              </div>
-            ))}
+          <div className="flex items-center">
+            <div className="hidden lg:flex items-center space-x-8 text-slate-400">
+              {secciones.map((seccion) => (
+                <div key={seccion.id} className="relative group">
+                  <button
+                    onClick={() => handleScroll(seccion.ref)}
+                    className="cursor-pointer flex items-center justify-center p-2 rounded-full transition-all duration-300 hover:bg-white/10"
+                  >
+                    {seccion.icono}
+                  </button>
+                  <span className="absolute left-1/2 -translate-x-1/2 top-10 whitespace-nowrap rounded bg-pink-500 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    {seccion.texto}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <LanguageSwitcher />
           </div>
           <div className="lg:hidden">
             <button

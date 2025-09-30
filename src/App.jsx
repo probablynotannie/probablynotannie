@@ -6,8 +6,10 @@ import Footer from "./componentes/body/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <Particulos />
-      <Landing />
+      <div className="relative overflow-hidden">
+        <Particulos />
+        <Landing />
+      </div>
       <Footer />
     </BrowserRouter>
   );

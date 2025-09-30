@@ -25,7 +25,7 @@ function Landing() {
         proyectosRef={proyectosRef}
         quePidoRef={quePidoRef}
       />
-      <main className="divide-y-2 divide-slate-700/30 select-none">
+      <main className="divide-y-2 divide-slate-700/30 ">
         <section ref={homeRef}>
           <Descripcion />
         </section>

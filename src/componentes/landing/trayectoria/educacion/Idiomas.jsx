@@ -1,34 +1,38 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Idiomas() {
+  const { t } = useTranslation();
   const idiomas = [
     {
       id: 0,
-      idioma: "Inglés",
+      idioma: t("educacionExp.eng"),
       porcentaje: 90,
       flag: "/idiomas/america.svg",
     },
     {
       id: 1,
-      idioma: "Español",
+      idioma: t("educacionExp.esp"),
       porcentaje: 90,
       flag: "/idiomas/spain.svg",
     },
     {
       id: 2,
-      idioma: "Georgiano",
+      idioma: t("educacionExp.geo"),
+
       porcentaje: 90,
       flag: "/idiomas/georgia.svg",
     },
     {
       id: 3,
-      idioma: "Ruso",
+      idioma: t("educacionExp.rus"),
+
       porcentaje: 40,
       flag: "/idiomas/russia.png",
     },
     {
       id: 4,
-      idioma: "Euskera",
+      idioma: t("educacionExp.eus"),
+
       porcentaje: 25,
       flag: "/idiomas/basque.png",
     },

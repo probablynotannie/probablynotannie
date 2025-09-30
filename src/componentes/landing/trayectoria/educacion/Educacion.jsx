@@ -1,23 +1,27 @@
+import { useTranslation } from "react-i18next";
+
 function Educacion() {
+  const { t } = useTranslation();
+
   const educacion = [
     {
       id: 0,
       colegio: "Zubiri Manteo",
-      titulo: "Grado Medio",
-      subTitulo: "Sistemas Microinformáticos",
+      titulo: t("educacionExp.gradoMedio"),
+      subTitulo: t("educacionExp.tituloMedio"),
     },
     {
       id: 1,
       colegio: "Zubiri Manteo",
-      titulo: "Grado Superior",
-      subTitulo: "Desarrollo de Aplicaciones Web",
+      titulo: t("educacionExp.gradoSuperior"),
+      subTitulo: t("educacionExp.tituloSuperior"),
     },
   ];
 
   return (
     <section className="container  px-6 py-12 max-w-6xl mx-auto flex flex-col gap-10">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-slate-200">
-        Educación
+      <h2 className="text-3xl md:text-4xl font-extrabold text-slate-200 capitalize">
+        {t("educacion")}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {educacion.map((ed) => (

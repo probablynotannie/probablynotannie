@@ -1,6 +1,8 @@
-import { FaCode } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 function Skills() {
+  const { t } = useTranslation();
+
   const anios_experiencia = new Date().getFullYear() - 2022;
 
   const herramientas = [
@@ -140,15 +142,14 @@ function Skills() {
               <p>Skills</p>
             </div>
             <h2 className="text-3xl md:text-4xl xl:text-6xl font-bold leading-tight">
-              Algunas de las herramientas que uso
+              {t("herramientas.titulo")}
             </h2>
           </div>
           <p className="p-3 text-gray-400 text-sm leading-relaxed text-justify">
-            Con {anios_experiencia} años de experiencia en desarrollo front-end,
-            cada día descubriendo nuevas tecnologias que usar y mejorar.
-            <br></br> Estoy en busca de nuevos retos donde pueda aportar lo que
-            sé y aprender aún más en el camino.
+            {anios_experiencia} {t("herramientas.descripcion")}
+            <br></br> {t("herramientas.descripcion2")}
           </p>
+          <p></p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">

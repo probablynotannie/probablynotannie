@@ -1,7 +1,8 @@
 import { FaDownload, FaPhone, FaSchool } from "react-icons/fa";
 import { IoAirplane } from "react-icons/io5";
-
+import { useTranslation } from "react-i18next";
 function Experiencia() {
+  const { t } = useTranslation();
   const recorridog = [
     {
       id: 0,
@@ -12,7 +13,11 @@ function Experiencia() {
         </span>
       ),
       nombre: "La Salle",
-      fechas: "Septiembre 2021 - Septiembre 2023",
+      fechas: (
+        <span className="capitalize">
+          {t("meses.sep")} 2021 - {t("meses.sep")} 2023
+        </span>
+      ),
 
       skills: [
         "Html + CSS",
@@ -26,8 +31,7 @@ function Experiencia() {
       ],
       badge: "bg-laSalle/40 text-laSalle",
       color: "text-laSalle",
-      descripcion:
-        "Desarrollo Full Stack, enfocado en la creación de páginas web dinámicas de todas las páginas de colegios de La Salle. Diseño desde 0 de páginas internas de La Salle para la sede de Donosti.",
+      descripcion: <p>{t("experienciaExp.laSalle")}</p>,
     },
     {
       id: 1,
@@ -38,25 +42,22 @@ function Experiencia() {
         </span>
       ),
       nombre: "Ayesa - Ibermatica",
-      fechas: "Octubre 2023 - Junio 2024",
+      fechas: (
+        <span className="capitalize">
+          {t("meses.oct")} 2023 - {t("meses.jun")} 2024
+        </span>
+      ),
 
-      skills: ["Jira", "CMS interno"],
+      skills: ["Jira", t("experienciaExp.cmsIntern")],
       badge: "bg-green-500/40 text-green-500",
       color: "text-cyan-500",
       descripcion: (
         <div>
-          <p>
-            Servicio técnico telemático: apoyo en la resolución de incidencias
-            de acceso, software y problemas técnicos.
-          </p>
-          <p>
-            Ayuda con el diseño de las páginas de formación de otros técnicos
-            utilizando CMS interno.
-          </p>
+          <p>{t("experienciaExp.ayesa")}</p>
+          <p>{t("experienciaExp.ayesa2")}</p>
         </div>
       ),
     },
-
     {
       id: 2,
       tipo: 0,
@@ -66,7 +67,12 @@ function Experiencia() {
         </span>
       ),
       nombre: "Dit Gestion",
-      fechas: "Junio 2024 - actualidad",
+      fechas: (
+        <span className="capitalize">
+          {" "}
+          {t("meses.jun")} 2024 - {t("actualidad")}{" "}
+        </span>
+      ),
       color: "text-laSalle",
       badge: "bg-dit/30 text-dit",
       skills: [
@@ -74,20 +80,19 @@ function Experiencia() {
         "Tailwind",
         "Flowbite",
         "Zustand",
-        "Hooks personalizados",
+        t("hooksPersonalizados"),
         "React Query",
         "Tanstack",
         "APIs",
       ],
-      descripcion:
-        " Páginas B2B y B2C para agencias de viajes, enfocadas en una  experiencia de usuario fluida y eficiente, utilizando componentes reutilizables e inputs diseñadas de cero. Asi mismo implementado motores de búsqueda y sistemas de filtrado, así como integraciones con APIs externas.",
+      descripcion: <p>{t("experienciaExp.dit")}</p>,
     },
   ];
 
   return (
     <div className="min-h-screen">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-slate-200 mb-5">
-        Experiencia
+      <h2 className="text-3xl md:text-4xl font-extrabold text-slate-200 mb-5 capitalize">
+        {t("experiencia")}
       </h2>
       <ol className="max-w-6xl relative border-s border-slate-200 dark:border-slate-700">
         {recorridog.reverse().map((item) => (
@@ -119,7 +124,7 @@ function Experiencia() {
                 className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-slate-800 dark:text-slate-400 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-700"
               >
                 <FaDownload className="me-2" />
-                Mi CV en PDF
+                {t("experienciaExp.cv")}
               </a>
             )}
             {item.id === 0 && (
@@ -129,7 +134,7 @@ function Experiencia() {
                 className="inline-flex items-center px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none dark:bg-slate-800 dark:text-slate-400 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-700"
               >
                 <FaDownload className="me-2" />
-                Carta de recomendación
+                {t("experienciaExp.cartaRec")}
               </a>
             )}
           </li>

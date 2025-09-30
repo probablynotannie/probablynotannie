@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 function Listado() {
+  const { t } = useTranslation();
   const proyectos = [
     {
       id: 0,
       visible: 1,
       url: "https://volt-green.vercel.app",
       texto: "Volt",
-      descripcion:
-        "Información sobre una empresa que se dedica mejoras de contrato de luz.",
-      info: "Página simple y estática para una empresa que ofrece servicios de mejora en las tarifas de luz y gas.",
+      descripcion: t("misProyectos.volt.descBreve"),
+      info: t("misProyectos.volt.descripcion"),
       imgLight: "/proyectos/volt/volt.png",
     },
     {
@@ -17,8 +18,8 @@ function Listado() {
       visible: 1,
       url: "https://buscadormotores.vercel.app",
       texto: "Dit Gestión",
-      descripcion: "Buscador de motores para agencias de viajes.",
-      info: "Buscador para las agencias de varios productos, poder añadir productos a la cesta para checkout multiple, skeleton placeholders, varios inputs personalizados como calendario infinito en el movil, integración de apis y mucho más.",
+      descripcion: t("misProyectos.dit.descBreve"),
+      info: t("misProyectos.dit.descripcion"),
       imgLight: "/proyectos/dit/image.png",
       imgDark: "/proyectos/dit/dit.png",
     },
@@ -27,8 +28,8 @@ function Listado() {
       visible: 1,
       url: "https://cargadortabs.vercel.app",
       texto: "Tabs agencias",
-      descripcion: "Herramienta para controlar precios de las habitaciones.",
-      info: "Herramienta para que las agencias puedan poner precios, disminuir, borrar, aumentar o deshabilitar las habitaciones por regimen y por fecha",
+      descripcion: t("misProyectos.tabs.descBreve"),
+      info: t("misProyectos.tabs.descripcion"),
       imgLight: "/proyectos/tabs/light.png",
       imgDark: "/proyectos/tabs/dark.png",
     },
@@ -51,8 +52,10 @@ function Listado() {
   return (
     <div className=" flex flex-col gap-10 justify-center">
       <div>
-        <h2 className="text-5xl font-bold text-white">Algunos proyectos</h2>
-        <span className="text-slate-400">Hosting en vercel</span>
+        <h2 className="text-5xl font-bold text-white capitalize">
+          {t("misProyectos.titulo")}
+        </h2>
+        <span className="text-slate-400">{t("misProyectos.subTitulo")}</span>
       </div>
       <div className="grid lg:grid-cols-2 gap-10 py-4 overflow-x-auto">
         {proyectos.map((p) => {
@@ -79,8 +82,7 @@ function Listado() {
                   loading="lazy"
                   className="object-cover object-top w-full h-full transition-transform duration-500 transform group-hover:scale-110"
                 />
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-black/40">
-                </div>
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-black/40"></div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center transition-opacity duration-500 opacity-0 bg-black/60 group-hover:opacity-100">
                   <p className="text-xl text-white">{p.info}</p>
                 </div>
