@@ -61,43 +61,44 @@ function Header({
   return (
     <nav className="shadow-xl shadow-indigo-800/20 backdrop-blur-lg tw-bg-slate-900 border-1 border-slate-100/20 fixed w-full z-50 transition-all duration-500 py-4">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-between">
+          {/* Left: Title */}
+          <div className="flex-1 flex items-center">
+            <button
+              onClick={() => handleScroll(homeRef)}
+              className="flex items-center text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent hover:scale-110 transition-transform duration-300"
+            >
+              <span className="animate-bounce mr-2">🚀</span>
+              <span className="typing-animation">Anano Vachadze</span>
+            </button>
+          </div>
+
+          {/* Center: Sections (only on large screens) */}
+          <div className="hidden lg:flex items-center space-x-8 text-slate-400">
+            {secciones.map((seccion) => (
+              <div key={seccion.id} className="relative group">
+                <button
+                  onClick={() => handleScroll(seccion.ref)}
+                  className="cursor-pointer flex items-center justify-center p-2 rounded-full transition-all duration-300 hover:bg-white/10"
+                >
+                  {seccion.icono}
+                </button>
+                <span className="absolute left-1/2 -translate-x-1/2 top-10 whitespace-nowrap rounded bg-pink-500 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {seccion.texto}
+                </span>
+              </div>
+            ))}
+          </div>
           <div className="flex items-center space-x-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent hover:scale-110 transition-transform duration-300">
+            <LanguageSwitcher />
+            <div className="lg:hidden">
               <button
-                onClick={() => handleScroll(homeRef)}
-                className="flex items-center"
+                className="p-2 rounded-full hover:bg-white/10 transition-colors"
+                id="mobileMenuButton"
               >
-                <span className="animate-bounce mr-2">🚀</span>
-                <span className="typing-animation">Anano Vachadze</span>
+                <i className="fas fa-bars text-xl"></i>
               </button>
             </div>
-          </div>
-          <div className="flex items-center">
-            <div className="hidden lg:flex items-center space-x-8 text-slate-400">
-              {secciones.map((seccion) => (
-                <div key={seccion.id} className="relative group">
-                  <button
-                    onClick={() => handleScroll(seccion.ref)}
-                    className="cursor-pointer flex items-center justify-center p-2 rounded-full transition-all duration-300 hover:bg-white/10"
-                  >
-                    {seccion.icono}
-                  </button>
-                  <span className="absolute left-1/2 -translate-x-1/2 top-10 whitespace-nowrap rounded bg-pink-500 text-white text-xs px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                    {seccion.texto}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <LanguageSwitcher />
-          </div>
-          <div className="lg:hidden">
-            <button
-              className="p-2 rounded-full hover:bg-white/10 transition-colors"
-              id="mobileMenuButton"
-            >
-              <i className="fas fa-bars text-xl"></i>
-            </button>
           </div>
         </div>
       </div>
