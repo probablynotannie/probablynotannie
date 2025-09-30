@@ -62,7 +62,6 @@ function Header({
     <nav className="shadow-xl shadow-indigo-800/20 backdrop-blur-lg tw-bg-slate-900 border-1 border-slate-100/20 fixed w-full z-50 transition-all duration-500 py-4">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between">
-          {/* Left: Title */}
           <div className="flex-1 flex items-center">
             <button
               onClick={() => handleScroll(homeRef)}
@@ -73,7 +72,6 @@ function Header({
             </button>
           </div>
 
-          {/* Center: Sections (only on large screens) */}
           <div className="hidden lg:flex items-center space-x-8 text-slate-400">
             {secciones.map((seccion) => (
               <div key={seccion.id} className="relative group">
