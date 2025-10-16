@@ -16,7 +16,7 @@ function Listado() {
     {
       id: 1,
       visible: 1,
-      url: "https://buscadormotores.vercel.app",
+      url: "https://motoreslocal.vercel.app",
       texto: "Dit Gestión",
       descripcion: t("misProyectos.dit.descBreve"),
       info: t("misProyectos.dit.descripcion"),
