@@ -70,6 +70,10 @@
       "descBreve": "Información sobre una empresa que se dedica mejoras de contrato de luz.",
       "descripcion": "Página simple y estática para una empresa que ofrece servicios de mejora en las tarifas de luz y gas."
     },
+    "pokemons": {
+      "descBreve": "Prueba técnica realizada para demostrar las habilidades con Zustand, Tanstack, drag and drop, algo de testing.",
+      "descripcion": "Crear equipo de pokemons para pelear entre amigos. Es un proyecyo realizado para un puesto de desarrolladora web que requería Zustand, Tanstack, Drag and drop, Testing y utilización de logica de batalla."
+    },
     "dit": {
       "descBreve": "Actualmente trabajando en esta web. Ten piedad 🥹 Buscador de motores para agencias de viajes.",
       "descripcion": "Buscador para las agencias de varios productos, poder añadir productos a la cesta para checkout multiple, skeleton placeholders, varios inputs personalizados como calendario infinito en el movil, integración de apis y mucho más."

@@ -14,7 +14,16 @@ function Listado() {
       imgLight: "/proyectos/volt/volt.png",
     },
     {
-      id: 1,
+      id: 2,
+      visible: 1,
+      url: "https://prueba-tecnica-snowy-seven.vercel.app",
+      texto: "Pokemon battle",
+      descripcion: t("misProyectos.pokemons.descBreve"),
+      info: t("misProyectos.pokemons.descripcion"),
+      imgLight: "/experiencia/pokemons.png",
+    },
+    {
+      id: 3,
       visible: 1,
       url: "https://buscadormotores.vercel.app",
       texto: "Dit Gestión",
@@ -24,7 +33,7 @@ function Listado() {
       imgDark: "/proyectos/dit/dit.png",
     },
     {
-      id: 2,
+      id: 4,
       visible: 1,
       url: "https://cargadortabs.vercel.app",
       texto: "Tabs agencias",
@@ -39,7 +48,7 @@ function Listado() {
     proyectos.reduce((acc, p) => {
       if (p.imgLight && p.imgDark) acc[p.id] = "dark";
       return acc;
-    }, {})
+    }, {}),
   );
 
   const toggleImageMode = (id) => {
