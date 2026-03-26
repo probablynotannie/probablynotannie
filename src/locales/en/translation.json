@@ -74,8 +74,12 @@
       "descripcion": "Create a team of Pokémon to battle with friends. This project was done for a web developer position that required Zustand, Tanstack, Drag and drop, Testing, and the use of battle logic."
     },
     "dit": {
-      "descBreve": "Currently working on it. Have mercy 🥹 Search engine for travel agencies.",
+      "descBreve": "Currently working on this website. The improved project has been moved to Bitbucket for security. Be kind 🥹 Travel agency engine search tool.",
       "descripcion": "Search tool for agencies to manage multiple products, add them to a multi-checkout cart, skeleton placeholders, multiple custom inputs like infinite mobile calendar, API integration, and much more."
+    },
+    "reactShop": {
+      "descBreve": "Simple online store, consuming a dummyJSON API with cart, filtering, skeleton placeholders, and product details.",
+      "descripcion": "This is a small e-commerce type project built with React where you can browse products, filter them, view details, and add them to a cart."
     },
     "tabs": {
       "descBreve": "Tool to control room prices.",

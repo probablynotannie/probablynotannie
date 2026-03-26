@@ -75,8 +75,12 @@
       "descripcion": "Crear equipo de pokemons para pelear entre amigos. Es un proyecyo realizado para un puesto de desarrolladora web que requería Zustand, Tanstack, Drag and drop, Testing y utilización de logica de batalla."
     },
     "dit": {
-      "descBreve": "Actualmente trabajando en esta web. Ten piedad 🥹 Buscador de motores para agencias de viajes.",
+      "descBreve": "Actualmente trabajando en esta web. El proyecto mejorado se ha movido a Bitbucket para la seguridad. Ten piedad 🥹 Buscador de motores para agencias de viajes.",
       "descripcion": "Buscador para las agencias de varios productos, poder añadir productos a la cesta para checkout multiple, skeleton placeholders, varios inputs personalizados como calendario infinito en el movil, integración de apis y mucho más."
+    },
+    "reactShop": {
+      "descBreve": "Tienda online simple, consumiendo una API de dummyJSON con cesta, filtrado, skeleton placeholders, detalles de productos.",
+      "descripcion": "Este es un pequeño proyecto típo e-commerce hecho con React donde puedes explorar productos, filtrarlos, visualizarlos y añadirlos a un carrito."
     },
     "tabs": {
       "descBreve": "Herramienta para controlar precios de las habitaciones.",

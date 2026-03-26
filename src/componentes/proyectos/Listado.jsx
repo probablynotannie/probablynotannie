@@ -14,13 +14,22 @@ function Listado() {
       imgLight: "/proyectos/volt/volt.png",
     },
     {
+      id: 3,
+      visible: 1,
+      url: "https://prueba-tecnica-react-six.vercel.app",
+      texto: "React Shop",
+      descripcion: t("misProyectos.reactShop.descBreve"),
+      info: t("misProyectos.reactShop.descripcion"),
+      imgLight: "/proyectos/reactShop.png",
+    },
+    {
       id: 2,
       visible: 1,
       url: "https://prueba-tecnica-snowy-seven.vercel.app",
       texto: "Pokemon battle",
       descripcion: t("misProyectos.pokemons.descBreve"),
       info: t("misProyectos.pokemons.descripcion"),
-      imgLight: "/experiencia/pokemons.png",
+      imgLight: "/proyectos/pokemons.png",
     },
     {
       id: 3,
